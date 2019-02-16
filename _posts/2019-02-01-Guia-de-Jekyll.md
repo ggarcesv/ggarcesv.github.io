@@ -34,10 +34,3 @@ This is the base Jekyll theme. You can find out more info about customizing your
 [<img src="{{ site.baseurl }}/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
 [<img src="{{ site.baseurl }}/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
 [<img src="{{ site.baseurl }}/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
-
-
-### Insertar archivos de codigo 
-
-{% highlight ruby %}
-{% include_snippet everything from {{ site.baseurl }}/_code/2019-02-01-Guia-de-Jekyll/c1.rb %}
-{% endhighlight %}
