@@ -1,18 +1,31 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="uft-8"/>
-    <title>Hola Mundo en HTML</title>
-  </head>
-  <body>
-<p>
-Hola, este blog se utilizará para difundir material técnico de estudio que se revisará en el trayecto de mi carrera como informático. Se publicarán guías, lecciones aprendidas, recomendaciones de libros y revisión de videocursos.
-<br>
-Este blog pertenece a Giuliano Garcés Vega.
-</p>
+---
+layout: default
+published: true
+---
 
-Blog 
-<a href="/blog/20190130.md" target="_blank"> 2019-02-03 Freecodecamp - Responsive Web Design Certification </a>
+<div class="posts">
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <article class="post">
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+   <div class="entry">
+        {{ post.excerpt }}
+   </div>
+<!--   <a class="button" style="font-size: 12px;" href="{{ site.baseurl }}{{ post.url }}"><span class="fas fa-hand-point-right"></span>&nbsp;Sigue leyendo</a> -->
+  </article>
+{% endfor %}
+</div>
 
-  </body>
-</html>
+<!-- Pagination links -->
+
+<div style="text-align: center; margin-top: 30px; margin-bottom: 25px;">
+  {% if paginator.previous_page %}
+    <a class="button" style="font-size: 12px;" title="Ve a la página anterior" href="{{ paginator.previous_page_path }}"><span class="fas fa-chevron-circle-left"></span>&nbsp;Página previa</a>
+  {% endif %}
+  <span class="page_number ">
+    &nbsp;&nbsp;&nbsp;&nbsp;Página {{ paginator.page }} de {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    &nbsp;&nbsp;&nbsp;&nbsp;<a class="button" style="font-size: 12px;" title="Ve a la página siguiente" href="{{ paginator.next_page_path }}"><span class="fas fa-chevron-circle-right"></span>&nbsp;Página posterior</a>
+  {% endif %}
+</div>
