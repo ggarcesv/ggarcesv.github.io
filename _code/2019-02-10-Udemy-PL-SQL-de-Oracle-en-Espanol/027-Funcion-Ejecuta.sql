@@ -1,0 +1,17 @@
+/*
+SELECT FN_TOTAL_EMPLEADOS
+FROM DUAL;
+
+*/
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+Empleados number;
+
+BEGIN
+Empleados:= FN_TOTAL_EMPLEADOS();
+DBMS_OUTPUT.PUT_LINE('Total empleados '||Empleados);
+
+END;
+/

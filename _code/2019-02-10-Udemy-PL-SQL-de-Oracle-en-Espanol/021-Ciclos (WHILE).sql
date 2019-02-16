@@ -1,0 +1,14 @@
+set serveroutput on;
+
+DECLARE
+Y NUMBER :=0;
+
+BEGIN
+
+WHILE Y <= 100 LOOP
+	DBMS_OUTPUT.PUT_LINE (Y);
+	Y := Y+20;
+END LOOP;
+
+END;
+/
