@@ -78,6 +78,7 @@ plugins:
   - jekyll-feed 
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-include_snippet
   
 # Exclude these files from your production _site
 exclude:
