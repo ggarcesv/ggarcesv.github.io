@@ -38,5 +38,5 @@ This is the base Jekyll theme. You can find out more info about customizing your
 ### Insertar archivos de codigo 
 
 {% highlight ruby %}
-{% include_relative 2019-02-01-Guia-de-Jekyll/c1.rb %}
+{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
 {% endhighlight %}
