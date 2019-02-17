@@ -31,6 +31,12 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 ### Insertar imagenes
 
-[<img src="{{ site.baseurl }}/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
-[<img src="{{ site.baseurl }}/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
-[<img src="{{ site.baseurl }}/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
+[<img src="/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
+[<img src="/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
+[<img src="/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
+
+### Insertar archivos de codigo 
+
+{% highlight ruby %}
+{% include_relative 2019-02-01-Guia-de-Jekyll/c1.rb %}
+{% endhighlight %}
