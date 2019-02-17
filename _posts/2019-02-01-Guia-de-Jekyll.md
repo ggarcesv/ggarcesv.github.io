@@ -17,25 +17,25 @@ bundle exec jekyll serve
 
 ### Crear un nuevo post 
 
-Agrega un nuevo archivo markdown en la carpeta `_posts` con siguiente convensión de nombre `YYYY-MM-DD-name-of-post.md` automaticamente aparecerá como una entrada de blog. 
+Agrega un nuevo archivo markdown en la carpeta `_posts` con siguiente convensión de nombre `YYYY-MM-DD-name-of-post.md` automáticamente aparecerá como una entrada de blog. 
 
 
 ### Acceso directo
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. 
+Revisa la documentación  [Jekyll docs][jekyll-docs] para conocer más acerca de Jekyll. 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 
-### Insertar imagenes
+### Insertar imágenes
 
 [<img src="/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
 [<img src="/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
 [<img src="/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
 
-### Insertar archivos de codigo 
+### Insertar archivos de código 
 
 {% highlight ruby %}
 {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
