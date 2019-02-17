@@ -47,3 +47,4 @@ This is the base Jekyll theme. You can find out more info about customizing your
 - jekyll se puede complementar con gemas
 - Github Page solo soporta alguna gemas [pages.github.com/versions](https://pages.github.com/versions/) 
 - Si utilizamos gemas de terceros en local, sus etiquetas no podran utilizarse en github page.
+- Se recomienda utilizar [GitHub Pages Ruby Gem](https://github.com/github/pages-gem) como configuración de entorno local de Jekyll para sincronizar con GitHub Pages.
