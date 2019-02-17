@@ -4,7 +4,7 @@ title: Guía de Jekyll 3.8.5
 author: Giuliano Garcés
 
 ---
-Actualizado 16/02/2019 · Rev 2
+Actualizado 17/02/2019 · Rev 3
 
 ### Ejecutar servidor jekyll
 
@@ -40,3 +40,10 @@ This is the base Jekyll theme. You can find out more info about customizing your
 {% highlight ruby %}
 {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
 {% endhighlight %}
+
+### Observaciones
+
+- El nombre de archivo de los post, códigos o imágenes no deben contener palabras reservadas.
+- jekyll se puede complementar con gemas
+- Github Page solo soporta alguna gemas [pages.github.com/versions](https://pages.github.com/versions/) 
+- Si utilizamos gemas de terceros en local, sus etiquetas no podran utilizarse en github page.
