@@ -4,7 +4,7 @@ title: Guía de Jekyll 3.8.5
 author: Giuliano Garcés
 
 ---
-Actualizado 17/02/2019 · Rev 3
+Actualizado 18/02/2019 · Rev 4
 
 ### Ejecutar servidor jekyll
 
@@ -31,11 +31,23 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 ### Insertar imágenes
 
+{% raw %}
+[<img src="/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
+[<img src="/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
+[<img src="/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
+{% endraw %}
+
 [<img src="/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
 [<img src="/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
 [<img src="/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
 
 ### Insertar archivos de código 
+
+{% raw %}
+    {% highlight ruby %}
+    {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
+    {% endhighlight %}
+{% endraw %}
 
 {% highlight ruby %}
 {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
