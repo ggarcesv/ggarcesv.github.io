@@ -6,7 +6,19 @@ author: Giuliano Garcés
 ---
 Actualizado 18/02/2019 · Rev 4
 
-### Ejecutar servidor jekyll
+<!-- TOC -->
+
+- [1. Ejecutar servidor jekyll](#1-ejecutar-servidor-jekyll)
+- [2. Crear un nuevo post](#2-crear-un-nuevo-post)
+- [3. Acceso directo](#3-acceso-directo)
+- [4. Insertar imágenes](#4-insertar-imágenes)
+- [5. Insertar archivos de código](#5-insertar-archivos-de-código)
+- [6. Observaciones](#6-observaciones)
+
+<!-- /TOC -->
+
+
+# 1. Ejecutar servidor jekyll
 
 {% highlight bash %}
 
@@ -15,12 +27,12 @@ bundle exec jekyll serve
 {% endhighlight %}
 
 
-### Crear un nuevo post 
+# 2. Crear un nuevo post 
 
 Agrega un nuevo archivo markdown en la carpeta `_posts` con siguiente convensión de nombre `YYYY-MM-DD-name-of-post.md` automáticamente aparecerá como una entrada de blog. 
 
 
-### Acceso directo
+# 3. Acceso directo
 
 Revisa la documentación  [Jekyll docs][jekyll-docs] para conocer más acerca de Jekyll. 
 
@@ -29,19 +41,19 @@ Revisa la documentación  [Jekyll docs][jekyll-docs] para conocer más acerca de
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 
-### Insertar imágenes
+# 4. Insertar imágenes
 
 {% raw %}
-[<img src="/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
-[<img src="/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
-[<img src="/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
+    <img src="/images/404.jpg" style="width: 50px;"/>
+    <img src="/images/404.jpg" style="width: 80px;"/>
+    <img src="/images/404.jpg" style="width: 100px;"/>
 {% endraw %}
 
-[<img src="/images/404.jpg" style="width: 50px;"/>]({{ site.baseurl }}/)
-[<img src="/images/404.jpg" style="width: 80px;"/>]({{ site.baseurl }}/)
-[<img src="/images/404.jpg" style="width: 100px;"/>]({{ site.baseurl }}/)
+<img src="/images/404.jpg" style="width: 50px;"/>
+<img src="/images/404.jpg" style="width: 80px;"/>
+<img src="/images/404.jpg" style="width: 100px;"/>
 
-### Insertar archivos de código 
+# 5. Insertar archivos de código 
 
 {% raw %}
     {% highlight ruby %}
@@ -53,7 +65,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
 {% endhighlight %}
 
-### Observaciones
+# 6. Observaciones
 
 - El nombre de archivo de los post, códigos o imágenes no deben contener palabras reservadas.
 - jekyll se puede complementar con gemas
