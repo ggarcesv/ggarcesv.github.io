@@ -3,7 +3,7 @@ layout: post
 title: Guía de Jekyll 3.8.5
 image: https://jekyllrb.com/img/octojekyll.png
 ---
-Actualizado 18/02/2019 · Rev 4
+Actualizado 18 Feb 2019 · Rev 4
 
 # Contenido
 
