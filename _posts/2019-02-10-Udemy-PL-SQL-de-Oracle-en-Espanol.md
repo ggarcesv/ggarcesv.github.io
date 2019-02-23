@@ -5,7 +5,7 @@ categories: [backend, database]
 image: https://udemy-images.udemy.com/course/750x422/687118_2cf7_2.jpg
 ---
 
-Actualizado 18/02/2019 · Rev 4
+Actualizado 23/02/2019 · Rev 5
 
 Si necesitas refrescar conocimientos esenciales de pl/sql o estas iniciando en esta área lo recomiendo 100%. Lo puedes comprar en el siguiente [enlace].
 El docente del curso es super claro y específico para explicar los conceptos, no se va por las ramas, el contenido me ayudo bastante para aprobar el ramo de **Lenguaje de Programación de Bases de Datos**.
