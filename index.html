@@ -1,31 +1,19 @@
 ---
 layout: default
-published: true
+title: Home
 ---
 
-<div class="posts">
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <article class="post">
-  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-   <div class="entry">
-        {{ post.excerpt }}
-   </div>
-<!--   <a class="button" style="font-size: 12px;" href="{{ site.baseurl }}{{ post.url }}"><span class="fas fa-hand-point-right"></span>&nbsp;Sigue leyendo</a> -->
-  </article>
-{% endfor %}
-</div>
+<section class="recent-posts">
+    <div class="row listrecent">
+        {% for post in paginator.posts %}
+        {% include postbox.html %}
+        {% endfor %}
+    </div>
+</section>
 
-<!-- Pagination links -->
-
-<div style="text-align: center; margin-top: 30px; margin-bottom: 25px;">
-  {% if paginator.previous_page %}
-    <a class="button" style="font-size: 12px;" title="Ve a la página anterior" href="{{ paginator.previous_page_path }}"><span class="fas fa-chevron-circle-left"></span>&nbsp;Página previa</a>
-  {% endif %}
-  <span class="page_number ">
-    &nbsp;&nbsp;&nbsp;&nbsp;Página {{ paginator.page }} de {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    &nbsp;&nbsp;&nbsp;&nbsp;<a class="button" style="font-size: 12px;" title="Ve a la página siguiente" href="{{ paginator.next_page_path }}"><span class="fas fa-chevron-circle-right"></span>&nbsp;Página posterior</a>
-  {% endif %}
+<div class="bottompagination">
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
 </div>

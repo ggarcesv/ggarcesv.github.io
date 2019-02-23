@@ -1,7 +1,7 @@
-_site
-.DS_Store
-.jekyll
+_site/
+.sass-cache/
 .jekyll-metadata
+.jekyll
 .bundle
 .sass-cache
 Gemfile
@@ -9,3 +9,11 @@ Gemfile.lock
 node_modules
 package.json
 CNAME
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+*.lnk
+.idea/*

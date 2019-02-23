@@ -1,55 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ site.name }} – {{ site.description }}</title>
 
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
 
-    {% include meta.html %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+    {% include web-app.html %}
+    {% include color-browser.html %}
 
-    {% seo %}
-  </head>
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+{% if jekyll.environment == 'production' %} {% endif %}
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/acerca-de">Acerca de</a>
-            
-           
-            <a class="button" style="font-size: 12px;" href="{{ site.baseurl }}/feed"><span class="fas fa-rss"></span>&nbsp;RSS</a>
-            
-          </nav>
-        </header>
-      </div>
+<div class="site-content">
+    <div class="mainheading" align="center">
+        <h1 class="sitetitle"><a href="{{ site.baseurl }}/"> {{ site.name }}</a></h1>
+        <p class="lead">{{ site.description }}</p>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation">
+
+        <div class="container pr-0">
+
+            <div class="collapse navbar-collapse" id="navbarMediumish">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://ggarcesv.github.io/">Blog Inicio</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ site.baseurl }}/about">Acerca de</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ site.baseurl }}/feed">RSS</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="main-content">
+        {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          <h4><a href="{{ site.baseurl }}/archive/">Archivo</a> | Temas: <a href="{{ site.baseurl }}/categories/database">Database</a> - <a href="{{ site.baseurl }}/categories/backend">Backend</a> - <a href="{{ site.baseurl }}/categories/frontend">Frontend</a> - <a href="{{ site.baseurl }}/categories/proyectos">Proyectos Personales</a></h4>
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <div class="jumbotron fortags">
+        <div class="d-md-flex h-100">
+            <div class="col-md-4 transpdark dark align-self-center text-center h-100">
+                <div class="d-md-flex align-items-center justify-content-center h-100">
+                    <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+                </div>
+            </div>
+            <div class="col-md-8 p-5 align-self-center text-center">
+                {% assign tags_list = site.categories | sort %}
+                {% if tags_list.first[0] == null %}
+                {% for tag in tags_list %}
+                <a href="{{ site.baseurl }}/categories.html#{{ tag | slugify }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
+                {% endfor %}
+                {% else %}
+                {% for tag in tags_list %}
+                <a href="{{ site.baseurl }}/categories.html#{{ tag[0]  | slugify }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
+                {% endfor %}
+                {% endif %}
+                {% assign tags_list = nil %}
 
-    {% include analytics.html %}
-  </body>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+</body>
 </html>

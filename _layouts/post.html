@@ -1,65 +1,82 @@
 ---
 layout: default
+archive: false
+post_class: post-template
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1><br>
+<div class="container">
+    <div class="row">
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
 
-  <div class="entry">
-    {{ content }}
-  </div><br><br>
-  <!-- 
- <div style="text-align: center; margin-top: 10px; margin-bottom: 25px;">
-   {% if page.previous %}
-  <a class="button" style="font-size: 12px;" title="Ve al artículo anterior" href="{{  site.baseurl }}{{  page.previous.url }}"><span class="fas fa-chevron-circle-left"></span>&nbsp;Anterior</a>
-{% endif %}
- {% if page.next %}
-  &nbsp;&nbsp;&nbsp;&nbsp;<a class="button" style="font-size: 12px;" title="Ve al artículo posterior" href="{{  site.baseurl }}{{  page.next.url }}"><span class="fas fa-chevron-circle-right"></span>&nbsp;Posterior</a>
-{% endif %}
-  </div>
-<br />
--->
-  <div class="date" style="margin-top: 25px;">
-    Por {{ page.author }} el
-          {{  page.date | date: '%d' }} de
-            {% assign m = page.date | date: '%-m' %}
-            {% case m %}
-                {% when '1' %}Enero
-                {% when '2' %}Febrero
-                {% when '3' %}Marzo
-                {% when '4' %}Abril
-                {% when '5' %}Mayo
-                {% when '6' %}Junio
-                {% when '7' %}Julio
-                {% when '8' %}Agosto
-                {% when '9' %}Septiembre
-                {% when '10' %}Octubre
-                {% when '11' %}Noviembre
-                {% when '12' %}Diciembre
-            {% endcase %}
-            de
-            {{  page.date | date: '%Y' }}
-    
-       <div style="margin-top: 25px;">
-            <div class="post-categories">
-  {% if post %}
-    {% assign categories = post.categories %}
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+            <span class="read-time" title="Estimated read time">
+  <svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round"
+       stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
+
+  {% assign words = content | number_of_words %}
+  {% if words < 60 %}
+    1 min read.
   {% else %}
-    {% assign categories = page.categories %}
+    {{ words | divided_by:80 }} mins read.
   {% endif %}
-  Archivado en: 
-  {% for category in categories %}
-  <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
+</span>
+            <style>
+                svg#i-clock {vertical-align: middle;}
+            </style>
+            <!-- Post Featured Image -->
+            {% if page.image %}<img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">{% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                {{content}}
+            </div>
+
+            <!-- Post Date -->
+            <p>
+                <small>
+                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
+                    {% if page.last_modified_at %}
+                    (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                    {% endif %}
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    {% assign sortedCategories = page.categories | sort %}
+                    {% for category in sortedCategories %}
+                    <li>
+                        <a href="{{ site.baseurl }}/categories.html#{{ category | slugify }}" class="post-tag">{{ category }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <div class="sharethis-inline-share-buttons"></div>
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                {% if page.previous.url %}
+                <a class="prev d-block col-md-6" href="{{page.previous.url | absolute_url}}"> &laquo; {{page.previous.title}}</a>
+                {% endif %}
+                {% if page.next.url %}
+                <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo; </a>
+                {% endif %}
+                <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
 </div>
-       </div>
-  </div>
-  <br />
-  <br />
-  <hr />
-  <div style="text-align: center; margin-top: 20px;">
-  Puedes disfrutar de otros artículos como éste en el <a href="{{  site.baseurl }}/archive">archivo del sitio</a>.
-  </div>
-  {% include disqus.html %}
-</article>
