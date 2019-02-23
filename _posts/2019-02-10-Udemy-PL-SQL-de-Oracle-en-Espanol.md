@@ -2,19 +2,29 @@
 layout: post
 title:  Udemy - PL/SQL de Oracle en Español 2018
 categories: [backend, database]
-author: Giuliano Garcés
+image: https://udemy-images.udemy.com/course/750x422/687118_2cf7_2.jpg
 ---
+
 Actualizado 18/02/2019 · Rev 4
+
+Si necesitas refrescar conocimientos esenciales de pl/sql o estas iniciando en esta área lo recomiendo 100%. Lo puedes comprar en el siguiente [enlace].
+El docente del curso es super claro y específico para explicar los conceptos, no se va por las ramas, el contenido me ayudo bastante para aprobar el ramo de **Lenguaje de Programación de Bases de Datos**.
+
+[enlace]: https://www.udemy.com/share/1000TwCEAcdlZRTQ==/
+
+Actualmente posee: 
+- 500 valoraciones con 4,5 / 5 de calidad 
+- 1.389 estudiantes inscritos 
+- 03:32 horas de video
+
 
 # Contenido
 
-
-- [Más información](#más-información)
 - [Hola Mundo](#hola-mundo)
 - [Variables Básicas](#variables-básicas)
 - [Constantes](#constantes)
 - [Valores querys a Variables INTO](#valores-querys-a-variables-into)
-- [LENGTH TRIM LOWER UPPER REPLACE SUBSTR SYSDATE ADD_MONTHS TO_CHAR NVL](#length-trim-lower-upper-replace-substr-sysdate-add_months-to_char-nvl)
+- [Length Trim Lower Upper Replace Substr Sysdate Add_months To_char NVL](#length-trim-lower-upper-replace-substr-sysdate-add_months-to_char-nvl)
 - [Arreglos](#arreglos)
 - [Tarea 1 Operaciones](#tarea-1-operaciones)
 - [Condiciones IF THEN ELSE BETWEEN END IF](#condiciones-if-then-else-between-end-if)
@@ -55,19 +65,6 @@ Actualizado 18/02/2019 · Rev 4
 - [Manejo Excepciones](#manejo-excepciones)
 - [Excepciones Personalizadas](#excepciones-personalizadas)
 
-# Más información
-
-**Fernando Herrera** el docente del curso es super claro y específico para explicar los conceptos, 
-no se va por las ramas, el contenido me ayudo bastante para aprobar el ramo de **Lenguaje de Programación de Bases de Datos**.
-
-Si necesitas refrescar conocimientos esenciales de pl/sql o estas iniciando en esta área lo recomiendo 100%. Lo puedes comprar en el siguiente [enlace].
-
-[enlace]: https://www.udemy.com/share/1000TwCEAcdlZRTQ==/
-
-Actualmente posee: 
-- 500 valoraciones con 4,5 / 5 de calidad 
-- 1.389 estudiantes inscritos 
-- 03:32 horas de video
 
 # Hola Mundo
 {% highlight sql %}
@@ -97,7 +94,7 @@ Actualmente posee:
 
 
 
-# LENGTH TRIM LOWER UPPER REPLACE SUBSTR SYSDATE ADD_MONTHS TO_CHAR NVL
+# Length Trim Lower Upper Replace Substr Sysdate Add_months To_char NVL
 {% highlight sql %}
 {% include 2019-02-10-Udemy-PL-SQL-de-Oracle-en-Espanol/008-LENGTH-TRIM-LOWER-UPPER-REPLACE-SUBSTR-SYSDATE-ADD_MONTHS-TO_CHAR-NVL.sql%}
 {% endhighlight %}
