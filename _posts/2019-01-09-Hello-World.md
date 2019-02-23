@@ -1,11 +1,25 @@
 ---
 layout: post
 title: Mi blog personal
-author: Giuliano Garcés
+permalink: /about/
 
 ---
-Actualizado el 16/02/2019 · Rev 2
+Actualizado el 23/02/2019 · Rev 3
 
-Haz clic en «Acerca de» si quieres saber más sobre mí.
 
-Hola, has llegado a mi blog personal. Aquí publicaré revisión de material técnico, guías de estudio, videocursos, lecciones aprendidas y recomendaciones de libros de tecnología.
+Hola a todos. 
+
+Mi nombre es Giuliano Garcés Vega y éste es mi blog personal. 
+
+Aquí publicaré revisión de material técnico, guías de estudio, lecciones de videocursos, experiencias y recomendaciones de libros de tecnología.
+
+Tengo un gran interés por las soluciones basadas en análisis de datos y todo lo relacionado con análisis de sistemas, elaboración, validación de modelos, programación y arquitecturas de datos.
+
+Me agradan los desafíos, investigar, tomar riesgos y aprender. 
+
+
+**Curriculum Vitae:**   [Descarga PDF]
+
+[Descarga PDF]: https://drive.google.com/open?id=1WFRvOCxKpLuoTUDgM0ZVIoTItkqCPqAU
+
+**Contacto:**   [garces1989@gmail.com](mailto:garces1989@gmail.com)
