@@ -8,9 +8,9 @@ Mi nombre es Giuliano Garcés Vega y éste es mi blog personal.
 
 ## Más información
 
-Me agradan los desafíos, investigar, tomar riesgos y aprender. 
+Tengo un gran interés por las soluciones basadas en análisis de datos y todo lo relacionado con análisis de sistemas, elaboración, validación de modelos, programación y arquitecturas de datos.
 
-Tengo un gran interés por las soluciones basadas en análisis de datos y todo lo relacionado con análisis de sistemas, elaboración, validación de modelos y arquitecturas de datos.
+Me agradan los desafíos, investigar, tomar riesgos y aprender. 
 
 
 ## Curriculum Vitae 
