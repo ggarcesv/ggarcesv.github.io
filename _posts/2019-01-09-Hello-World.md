@@ -2,7 +2,7 @@
 layout: post
 title: Mi blog personal
 permalink: /about/
-
+image: https://avatars0.githubusercontent.com/u/14808145
 ---
 Actualizado el 23/02/2019 · Rev 3
 
