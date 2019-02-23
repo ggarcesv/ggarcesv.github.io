@@ -34,7 +34,7 @@ Version: 1.0.22
      transition: top 0.2s ease-in-out;
 }
  .main-content {
-    min-height:10px;
+    min-height:300px;
 }
  .site-content {
      min-height: 60vh;
