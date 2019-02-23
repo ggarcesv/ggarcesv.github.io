@@ -4,7 +4,6 @@ title:  Revisión PL/SQL de Oracle en Español 2018 - Udemy
 categories: [backend, database]
 image: https://udemy-images.udemy.com/course/750x422/687118_2cf7_2.jpg
 ---
-
 Actualizado 23/02/2019 · Rev 5
 
 Si necesitas refrescar conocimientos esenciales de pl/sql o estas iniciando en esta área lo recomiendo 100%. Lo puedes comprar en el siguiente [enlace].
