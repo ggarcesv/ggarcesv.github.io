@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Guía de Jekyll 3.8.5
-author: Giuliano Garcés
-
+image: https://jekyllrb.com/img/octojekyll.png
 ---
 Actualizado 18/02/2019 · Rev 4
 
-<!-- TOC -->
+# Contenido
 
 - [1. Ejecutar servidor jekyll](#1-ejecutar-servidor-jekyll)
 - [2. Crear un nuevo post](#2-crear-un-nuevo-post)
@@ -14,8 +13,6 @@ Actualizado 18/02/2019 · Rev 4
 - [4. Insertar imágenes](#4-insertar-imágenes)
 - [5. Insertar archivos de código](#5-insertar-archivos-de-código)
 - [6. Observaciones](#6-observaciones)
-
-<!-- /TOC -->
 
 
 # 1. Ejecutar servidor jekyll

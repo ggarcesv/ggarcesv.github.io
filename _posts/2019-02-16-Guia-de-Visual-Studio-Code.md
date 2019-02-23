@@ -2,8 +2,7 @@
 layout: post
 title: Guía Visual Studio Code 1.31
 categories: [Guia]
-author: Giuliano Garcés
-
+image: https://cdn-images-1.medium.com/max/1200/1*1lVAbOjFoBHUjAkxnOtA2w.png
 ---
 Actualizado 18/02/2019 · Rev 2
 
