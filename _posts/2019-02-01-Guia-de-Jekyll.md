@@ -40,15 +40,29 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 # 4. Insertar imágenes
 
-{% raw %}
+{% highlight html %} 
     <img src="/images/404.jpg" style="width: 50px;"/>
     <img src="/images/404.jpg" style="width: 80px;"/>
     <img src="/images/404.jpg" style="width: 100px;"/>
-{% endraw %}
+{% endhighlight %}
 
 <img src="/images/404.jpg" style="width: 50px;"/>
 <img src="/images/404.jpg" style="width: 80px;"/>
 <img src="/images/404.jpg" style="width: 100px;"/>
+
+# Rutas
+
+En jekyll no está permitido acceder a una ruta anterior 
+
+{% highlight html %}  
+<img src="../../images/404.jpg"/> 
+{% endhighlight %}
+
+Las para acceder a los assets utiliza el directorio
+
+* _includes
+* images
+
 
 # 5. Insertar archivos de código 
 
@@ -62,10 +76,10 @@ This is the base Jekyll theme. You can find out more info about customizing your
 {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
 {% endhighlight %}
 
-# 6. Observaciones
+# 6. Observaciones Generales
 
 - El nombre de archivo de los post, códigos o imágenes no deben contener palabras reservadas.
 - jekyll se puede complementar con gemas
 - Github Page solo soporta alguna gemas [pages.github.com/versions](https://pages.github.com/versions/) 
-- Si utilizamos gemas de terceros en local, sus etiquetas no podran utilizarse en github page.
+- Si utilizamos gemas de terceros en local, sus etiquetas no podrán utilizarse en github page.
 - Se recomienda utilizar [GitHub Pages Ruby Gem](https://github.com/github/pages-gem) como configuración de entorno local de Jekyll para sincronizar con GitHub Pages.
