@@ -1,3 +1,10 @@
+---
+layout: post
+title: Guía PHP 7
+categories: [servidores]
+image: 
+---
+
 Apache httpd 2.4.38 en Debian 9
 
 http://httpd.apache.org/
