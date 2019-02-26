@@ -50,8 +50,8 @@ Verifico la ruta de instalación de Composer
 
 
 Referencia: 
-https://getcomposer.org/doc/00-intro.md
-https://www.jesusamieiro.com/instalar-composer-de-forma-global-en-debian-o-en-cualquier-sistema-linux/
+* https://getcomposer.org/doc/00-intro.md
+* https://www.jesusamieiro.com/instalar-composer-de-forma-global-en-debian-o-en-cualquier-sistema-linux/
 
 # Laravel
 
