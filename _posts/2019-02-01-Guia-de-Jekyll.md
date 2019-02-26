@@ -17,11 +17,7 @@ Actualizado 23 Feb 2019 · Rev 5
 
 # 1. Ejecutar servidor jekyll
 
-{% highlight bash %}
-
-bundle exec jekyll serve
-
-{% endhighlight %}
+{% highlight bash %} bundle exec jekyll serve {% endhighlight %}
 
 
 # 2. Crear un nuevo post 
