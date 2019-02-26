@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guía PHP 7
+title: Guía Apache
 categories: [servidores]
 image: 
 ---
