@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guía PostgreSQL
-categories: [frontend]
+categories: [database]
 image: 
 ---
 

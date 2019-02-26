@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guía Laravel
-categories: [frontend]
+categories: [backend]
 image: 
 ---
 
