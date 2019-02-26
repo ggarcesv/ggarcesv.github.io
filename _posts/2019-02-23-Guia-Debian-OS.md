@@ -1,28 +1,18 @@
 ---
 layout: post
 title: Guía Debian 9.8
-categories: [frontend]
-image: 
+categories: [servidores]
+image: https://www.muycomputer.com/wp-content/uploads/2018/03/Debian_MicrosoftStore.jpg
 ---
-Actualizado 24 Feb 2019 · Rev 1
+Actualizado 26 Feb 2019 · Rev 2
 
 
-<!-- TOC -->
+# Contenido
 
 - [Release](#release)
 - [Observaciones Generales](#observaciones-generales)
 - [Asignar IP Fija](#asignar-ip-fija)
-- [This file describes the network interfaces available on your system](#this-file-describes-the-network-interfaces-available-on-your-system)
-- [and how to activate them. For more information, see interfaces(5).](#and-how-to-activate-them-for-more-information-see-interfaces5)
-- [The loopback network interface](#the-loopback-network-interface)
-- [The primary network interface](#the-primary-network-interface)
-- [This file describes the network interfaces available on your system](#this-file-describes-the-network-interfaces-available-on-your-system-1)
-- [and how to activate them. For more information, see interfaces(5).](#and-how-to-activate-them-for-more-information-see-interfaces5-1)
-- [The loopback network interface](#the-loopback-network-interface-1)
-- [The primary network interface](#the-primary-network-interface-1)
 - [Cambiar a Debian Testing](#cambiar-a-debian-testing)
-- [stretch-updates, previously known as 'volatile'](#stretch-updates-previously-known-as-volatile)
-- [stretch-updates, previously known as 'volatile'](#stretch-updates-previously-known-as-volatile-1)
 - [Comandos de ayuda](#comandos-de-ayuda)
 - [Directorios](#directorios)
 - [Deshabilitar Servicios innecesarios](#deshabilitar-servicios-innecesarios)
@@ -46,8 +36,6 @@ Actualizado 24 Feb 2019 · Rev 1
     - [Agregar un repositorio](#agregar-un-repositorio)
     - [Eliminar un repositorio](#eliminar-un-repositorio)
 - [Páginas de Referencia](#páginas-de-referencia)
-
-<!-- /TOC -->
 
 
 
