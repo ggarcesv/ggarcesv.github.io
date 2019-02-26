@@ -2,39 +2,52 @@
 layout: post
 title: Guía Laravel
 categories: [backend]
-image: 
+image: https://www.smythsys.es/wordpress/wp-content/uploads/2017/07/laravel.png
 ---
+# Contenido
+
+- [Composer:](#composer)
+- [Laravel](#laravel)
+
 
 
 # Composer:
 
 Me sitúo en el "home" del usuario
-cd ~
-Descargo el instalador
 
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+{% highlight bash %}cd ~ {% endhighlight %}
+
+
+
+Descargo el instalador
+{% highlight bash %}php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"{% endhighlight %}
+
 
 Verifico el instalador
-Esta línea puede cambiar en función del ejecutable
+{% highlight bash %}php -r "if (hash_file('sha384', 'composer-setup.php') === '48e3236262b34d30969dca3c37281b3b4bbe3221bda826ac6a9a62d6444cdb0dcd0615698a5cbe587c3f0fe57a54d8f5') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"{% endhighlight %}
 
-php -r "if (hash_file('sha384', 'composer-setup.php') === '48e3236262b34d30969dca3c37281b3b4bbe3221bda826ac6a9a62d6444cdb0dcd0615698a5cbe587c3f0fe57a54d8f5') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 
 Compruebo que la carpeta donde voy a instalar composer (/usr/local/bin) se encuentra dentro del path de Linux
 
-echo $PATH
+{% highlight bash %}echo $PATH{% endhighlight %}
+
 
 Ejecuto la instalación en el directorio /usr/local/bin
 
-php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+{% highlight bash %}php composer-setup.php --install-dir=/usr/local/bin --filename=composer{% endhighlight %}
+
 
 Elimino el instalador
-php -r "unlink('composer-setup.php');"
+{% highlight bash %}php -r "unlink('composer-setup.php');"{% endhighlight %}
+
 
 Verifico que composer es accesible
-composer --version
+{% highlight bash %}composer --version{% endhighlight %}
+
 
 Verifico la ruta de instalación de Composer
-which composer
+{% highlight bash %}which composer{% endhighlight %}
+
 
 Referencia: 
 https://getcomposer.org/doc/00-intro.md
@@ -42,26 +55,30 @@ https://www.jesusamieiro.com/instalar-composer-de-forma-global-en-debian-o-en-cu
 
 # Laravel
 
-cd /var/www/html/
-composer create-project laravel/laravel test --prefer-dist
+Me sitúo en el "html" 
+{% highlight bash %}cd /var/www/html/{% endhighlight %}
 
-php artisan serve --host=179.4.196.49
+Creo un proyecto laravel utilizando composer
+
+{% highlight bash %}composer create-project laravel/laravel test --prefer-dist{% endhighlight %}
+
+Levanto el servicio de laravel
+
+{% highlight bash %}php artisan serve --host=179.4.196.49{% endhighlight %}
 
 Se accede desde http://179.4.196.49:8000/
 
+Para configurar el proyecto con la base de datos debemos ir al Archivo .env ubicado en la raíz de nuestro proyecto y configurar con las credenciales de postgres.
 
-Lo primero es ir al Archivo .env ubicado en la raíz de nuestro proyecto y configurar postgres.
-
-
-DB_CONNECTION=pgsql
+{% highlight bash %}DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
 DB_DATABASE=postgres
 DB_USERNAME=postgres
-DB_PASSWORD=root
+DB_PASSWORD=root{% endhighlight %}
 
-
-Después hay que actualizar el archivo “database.php” ubicado en la Ruta “Config > databese.php” Ahí deben reemplazar los siguientes parámetros.
+Después hay que actualizar el archivo “database.php” ubicado en la Ruta “Config/databese.php” 
+Ahí deben reemplazar los siguientes parámetros.
 
 ‘default’ => env(‘DB_CONNECTION’, ‘pgsql’),
 
@@ -79,36 +96,36 @@ php artisan view:clear
 
 php artisan cache:clear
 
+Fuente: https://felipeahumada.wordpress.com/confuigurar-laravel-5-postgres/
 
-https://felipeahumada.wordpress.com/confuigurar-laravel-5-postgres/
+Para comenzar el proyecto primero tenemos que definir la tabla que utilizaremos en base de datos
+En este comando crearemos la tabla usuarios
 
-Crear el archivo para definir atributos y tablas en base de datos
-
-php artisan make:migration create_usuarios_table --create=usuarios 
-
+{% highlight bash %}php artisan make:migration create_usuarios_table --create=usuarios {% endhighlight %}
 
 Para crear los atributos modificamos el archivo database/migrations/%Timestamp%_create_usuarios_table
 
-Para crear las tablas de la base de datos con el archivo actualizado de migrations
+Para ejecutar la creación de las tabla y atributos ejecutamos:
 
-php artisan migrate
+{% highlight bash %}php artisan migrate{% endhighlight %}
 
-Creamos el modelo
+Luego creamos el modelo con el siguiente comando:
 
-php artisan make:model Usuario
+{% highlight bash %}php artisan make:model Usuario{% endhighlight %}
 
 
 El modelo es creado en app/Usuario.php
 
-Creamos el controlador
+Luego creamos el controlador
 
-php artisan make:controller UsuarioController --resource
+{% highlight bash %}php artisan make:controller UsuarioController --resource{% endhighlight %}
 
 El controlador lo actualizamos desde app/Http/UsuarioController.php
 
-Agregamos los atributos y las rutas de las vistas necesarias para el index,  create, edit, destroy
+Agregamos los atributos y las rutas de las vistas necesarias para el index, create, edit y destroy
 
 Las rutas de las vistas se realizan en resources/views/usuario
 
 Para finalizar la configuración debemos actualizar el archivo de las rutas principal, este lo encontramos
-en routes/web.php y agregamos la ruta como recurso
+en routes/web.php y  agregamos /usuario como recurso
+
