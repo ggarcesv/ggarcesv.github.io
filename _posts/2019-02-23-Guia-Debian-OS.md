@@ -55,23 +55,8 @@ Verificamos el nombre de las interfaces de red y la IP de acceso a la red
 
 Configuración actual:
 
-
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host
-       valid_lft forever preferred_lft forever
-
-
-2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
-    link/ether 08:00:27:73:78:c0 brd ff:ff:ff:ff:ff:ff
-    inet 192.168.0.5/24 brd 192.168.0.255 scope global enp0s3
-       valid_lft forever preferred_lft forever
-    inet6 fe80::a00:27ff:fe73:78c0/64 scope link
-       valid_lft forever preferred_lft forever
-
-Información de las interfaces de red
+{% include 2019-02-23-Guia-Debian-OS/ip.out %}
+<small>Información de las interfaces de red</small>
 
 
 Apagamos la interface donde accede a internet
@@ -81,7 +66,9 @@ ifdown enp0s3
 
 Configuramos la configuración de la IP dinamica a IP fija con el comando:
 
-nano /etc/network/interfaces
+{% highlight bash %}nano /etc/network/interfaces{% endhighlight %}
+
+
 
 Archivo de configuración:
 
@@ -98,7 +85,8 @@ Archivo de configuración con ip fija
 	
 Encendemos la interface
 
-ifup enp0s3
+{% highlight bash %}ifup enp0s3{% endhighlight %}
+
 
 Verificamos que los cambios se hayan realizado en el punto 1
 
