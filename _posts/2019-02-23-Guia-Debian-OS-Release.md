@@ -1,9 +1,3 @@
----
-layout: post
-title: Debian - Historial de actualizaciones
-categories: [servidores]
-image: https://www.muycomputer.com/wp-content/uploads/2018/03/Debian_MicrosoftStore.jpg
----
 Actualizado 03 Mar 2019 · Rev 2
 
 # Release
