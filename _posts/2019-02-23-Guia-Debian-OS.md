@@ -52,11 +52,11 @@ Verificamos el nombre de las interfaces de red y la IP de acceso a la red
 
 {% highlight bash %}ip a{% endhighlight %}
 
-
-Configuración actual:
-
+<details>
+  <summary>Output:</summary>
 {% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/ip.out %}{% endhighlight %}
 <small>Información de las interfaces de red</small>
+</details>
 
 
 Apagamos la interface donde accede a internet
@@ -73,13 +73,13 @@ Configuramos la configuración de la IP dinamica a IP fija con el comando:
 
 Archivo de configuración:
 
-{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/interfaces-dinamic.conf %}{% endhighlight %}
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/interfaces-dinamic.conf %}{% endhighlight %}
 
 
 Archivo de configuración con ip dinámica
 
 
-{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/interfaces-fija.conf %}{% endhighlight %}
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/interfaces-fija.conf %}{% endhighlight %}
 
 
 Archivo de configuración con ip fija
@@ -118,11 +118,11 @@ stretch -> testing
 
 Output:
 
-{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/sources-default.list %}{% endhighlight %}
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/sources-default.list %}{% endhighlight %}
 
 Cambiamos a:
 
-{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/sources-testing.list %}{% endhighlight %}
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/sources-testing.list %}{% endhighlight %}
 
 Luego actualizamos los repositorios y aplicaciones 
 
