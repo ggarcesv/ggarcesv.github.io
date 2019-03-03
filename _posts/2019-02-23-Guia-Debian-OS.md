@@ -40,6 +40,19 @@ Actualizado 03 Mar 2019 · Rev 3
 
 {% include 2019-02-23-Guia-Debian-OS/01-Release.md %}
 
+# Prueba
+<details><summary>Output:</summary>
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/ip.out %}{% endhighlight %}
+<small>Información de las interfaces de red</small>
+hola dflgjdlfgjdflkgjdlfgkjdfl
+
+
+<details><summary>Output2:</summary>
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/ip.out %}{% endhighlight %}
+<small>Información de las interfaces de red</small>
+hola dflgjdlfgjdflkgjdlfgkjdfl
+</details><br>
+</details><br>
 
 # Observaciones Generales
 
@@ -52,11 +65,10 @@ Verificamos el nombre de las interfaces de red y la IP de acceso a la red
 
 {% highlight bash %}ip a{% endhighlight %}
 
-<details>
-  <summary>Output:</summary>
+<details><summary>Output:</summary>
 {% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/ip.out %}{% endhighlight %}
 <small>Información de las interfaces de red</small>
-</details>
+</details><br>
 
 
 Apagamos la interface donde accede a internet
@@ -69,15 +81,13 @@ Configuramos la configuración de la IP dinamica a IP fija con el comando:
 
 {% highlight bash %}nano /etc/network/interfaces{% endhighlight %}
 
-
-
-Archivo de configuración:
-
+<details><summary>Output:</summary>
 {% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/interfaces-dinamic.conf %}{% endhighlight %}
+<small>Archivo de configuración</small>
+</details><br>
 
 
 Archivo de configuración con ip dinámica
-
 
 {% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/interfaces-fija.conf %}{% endhighlight %}
 
@@ -562,8 +572,8 @@ https://www.expertosdecomputadoras.com/montar-disco-exfat-ubuntu/
 # Gestión de redes
 <!-- TODO: agregar ejemplos redes -->
 
+Pre-requisitos: Activar los repositorios privativos non-free en Debian
 iproute2
-Activar los repositorios privativos non-free en Debian
 Iwconfig
 
 https://geekland.eu/instalar-drivers-tarjeta-de-red-wifi-debian/
