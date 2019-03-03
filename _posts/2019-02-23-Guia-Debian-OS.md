@@ -55,14 +55,15 @@ Verificamos el nombre de las interfaces de red y la IP de acceso a la red
 
 Configuración actual:
 
-{% include 2019-02-23-Guia-Debian-OS/ip.out %}
+{% highlight bash %}{% include 2019-02-23-Guia-Debian-OS/ip.out %}{% endhighlight %}
 <small>Información de las interfaces de red</small>
 
 
 Apagamos la interface donde accede a internet
 
+{% highlight bash %}ifdown enp0s3{% endhighlight %}
 
-ifdown enp0s3
+
 
 Configuramos la configuración de la IP dinamica a IP fija con el comando:
 
