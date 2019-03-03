@@ -3,7 +3,7 @@ layout: post
 title: Guía de Jekyll 3.8.5
 image: https://jekyllrb.com/img/octojekyll.png
 ---
-Actualizado 23 Feb 2019 · Rev 5
+Actualizado 03 Mar 2019 · Rev 6
 
 # Contenido
 
@@ -19,6 +19,7 @@ Actualizado 23 Feb 2019 · Rev 5
 
 {% highlight bash %} bundle exec jekyll serve {% endhighlight %}
 
+Server address: http://127.0.0.1:4000
 
 # 2. Crear un nuevo post 
 
