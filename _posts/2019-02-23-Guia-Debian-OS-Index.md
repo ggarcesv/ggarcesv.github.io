@@ -4,7 +4,7 @@ title: Guía Debian 9.8
 categories: [servidores]
 image: https://www.muycomputer.com/wp-content/uploads/2018/03/Debian_MicrosoftStore.jpg
 ---
-Actualizado 26 Feb 2019 · Rev 2
+Actualizado 03 Mar 2019 · Rev 3
 
 
 # Contenido
@@ -38,12 +38,10 @@ Actualizado 26 Feb 2019 · Rev 2
 - [Páginas de Referencia](#páginas-de-referencia)
 
 
+{% include_relative 2019-02-23-Guia-Debian-OS-Release.md %}
 
 
-# Release
 
-* 2019-02-16 [Debian 9.8.0](https://www.debian.org/News/2019/20190216)
-* 2019-01-23 [Debian 9.7.0](https://www.debian.org/News/2019/20190123)
 
 # Observaciones Generales
 
@@ -88,39 +86,14 @@ nano /etc/network/interfaces
 
 Archivo de configuración:
 
+{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/interfaces-dinamic.conf %}{% endhighlight %}
 
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-
-source /etc/network/interfaces.d/*
-
-# The loopback network interface
-auto lo
-iface lo inet loopback
-
-# The primary network interface
-allow-hotplug enp0s3
-iface enp0s3 inet dhcp
 
 Archivo de configuración con ip dinámica
 
 
+{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/interfaces-fija.conf %}{% endhighlight %}
 
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-
-source /etc/network/interfaces.d/*
-
-# The loopback network interface
-auto lo
-iface lo inet loopback
-
-# The primary network interface
-allow-hotplug enp0s3
-iface enp0s3 inet static
-        address 192.168.0.5
-        gateway 192.168.0.1
-        netmask 255.255.255.0
 
 Archivo de configuración con ip fija
 	
@@ -157,48 +130,28 @@ stretch -> testing
 
 Output:
 
-
-
-
-deb http://deb.debian.org/debian/ stretch main
-deb-src http://deb.debian.org/debian/ stretch main
-
-deb http://security.debian.org/debian-security stretch/updates main
-deb-src http://security.debian.org/debian-security stretch/updates main
-
-# stretch-updates, previously known as 'volatile'
-deb http://deb.debian.org/debian/ stretch-updates main
-deb-src http://deb.debian.org/debian/ stretch-updates main
+{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/sources-default.list %}{% endhighlight %}
 
 Cambiamos a:
 
+{% highlight bash %} {% include 2019-02-23-Guia-Debian-OS/sources-testing.list %}{% endhighlight %}
 
-
-
-deb http://deb.debian.org/debian/ testing main contrib non-free
-deb-src http://deb.debian.org/debian/ testing main contrib non-free
-
-deb http://security.debian.org/debian-security testing/updates main contrib non-free
-deb-src http://security.debian.org/debian-security testing/updates main contrib non-free
-
-
-# stretch-updates, previously known as 'volatile'
-deb http://deb.debian.org/debian/ testing-updates main contrib non-free
-
-deb-src http://deb.debian.org/debian/ testing-updates main contrib non-free
-
-
+Luego actualizamos los repositorios y aplicaciones 
 
 {% highlight bash %}apt-get update; apt-get upgrade{% endhighlight %}
 
-reiniciar
+reiniciamos
 
 {% highlight bash %}apt-get update
 apt-get dist-upgrade{% endhighlight %}
 
-reiniciar
+reiniciamos
 
 
+# Ver los procesos
+
+
+# Errores 
 
 Corregimos el error al actualizar paquetes: ‘LDCONFIG’ NO SE HA ENCONTRADO EN EL PATH O NO ES EJECUTABLE
 
