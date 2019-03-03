@@ -38,7 +38,7 @@ Actualizado 03 Mar 2019 · Rev 3
 - [Páginas de Referencia](#páginas-de-referencia)
 
 
-{% include_relative 2019-02-23-Guia-Debian-OS/01-Release.md %}
+{% include 2019-02-23-Guia-Debian-OS/01-Release.md %}
 
 
 # Observaciones Generales
