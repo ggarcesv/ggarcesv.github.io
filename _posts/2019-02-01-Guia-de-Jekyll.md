@@ -3,7 +3,7 @@ layout: post
 title: Guía de Jekyll 3.8.5
 image: https://jekyllrb.com/img/octojekyll.png
 ---
-Actualizado 03 Mar 2019 · Rev 6
+Actualizado 04 Mar 2019 · Rev 7
 
 # Contenido
 
@@ -19,7 +19,7 @@ Actualizado 03 Mar 2019 · Rev 6
 
 {% highlight bash %} bundle exec jekyll serve {% endhighlight %}
 
-Server address: http://127.0.0.1:4000
+Server address: [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
 # 2. Crear un nuevo post 
 
@@ -37,11 +37,9 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 # 4. Insertar imágenes
 
-{% highlight html %} 
-    <img src="/images/404.jpg" style="width: 50px;"/>
-    <img src="/images/404.jpg" style="width: 80px;"/>
-    <img src="/images/404.jpg" style="width: 100px;"/>
-{% endhighlight %}
+{% highlight html %}<img src="/images/404.jpg" style="width: 50px;"/>
+<img src="/images/404.jpg" style="width: 80px;"/>
+<img src="/images/404.jpg" style="width: 100px;"/>{% endhighlight %}
 
 <img src="/images/404.jpg" style="width: 50px;"/>
 <img src="/images/404.jpg" style="width: 80px;"/>
@@ -51,9 +49,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 En jekyll no está permitido acceder a una ruta anterior 
 
-{% highlight html %}  
-<img src="../../images/404.jpg"/> 
-{% endhighlight %}
+{% highlight html %}<img src="../../images/404.jpg"/>{% endhighlight %}
 
 Las para acceder a los assets utiliza el directorio
 
@@ -63,15 +59,9 @@ Las para acceder a los assets utiliza el directorio
 
 # 5. Insertar archivos de código 
 
-{% raw %}
-    {% highlight ruby %}
-    {% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
-    {% endhighlight %}
-{% endraw %}
+{% raw %}{% highlight ruby %}{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}{% endhighlight %}{% endraw %}
 
-{% highlight ruby %}
-{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}
-{% endhighlight %}
+{% highlight ruby %}{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}{% endhighlight %}
 
 # 6. Observaciones Generales
 
