@@ -4,7 +4,7 @@ title: Mi blog personal
 permalink: /about/
 image: https://avatars0.githubusercontent.com/u/14808145
 ---
-Actualizado 23 Feb 2019 · Rev 3
+Actualizado 09 Mar 2019 · Rev 4
 
 
 Hola a todos. 
@@ -18,6 +18,6 @@ Me agradan los desafíos, investigar, tomar riesgos y aprender.
 
 **Curriculum Vitae:**   [Descarga PDF]
 
-[Descarga PDF]: https://drive.google.com/open?id=1WFRvOCxKpLuoTUDgM0ZVIoTItkqCPqAU
+[Descarga PDF]: https://docs.google.com/document/d/1Hp_NKPYzfUy_81OE--a5dV2UOV3OYvoyp_IaIWUmFQ8/export?format=pdf
 
 **Contacto:**   [garces1989@gmail.com](mailto:garces1989@gmail.com)
