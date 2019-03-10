@@ -17,3 +17,4 @@ Desktop.ini
 $RECYCLE.BIN/
 *.lnk
 .idea/*
+.vscode/settings.json

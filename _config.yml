@@ -14,9 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 email: garces1989@gmail.com
-# twitter_username: bharathsathuri
-github_username: ggarcesv
-linkedin_username: ggarcesv
 name: Giuliano Garces
 description: Informático, investigador y analista de datos.
 
