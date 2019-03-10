@@ -3,7 +3,7 @@ layout: post
 title: Guía de Jekyll 3.8.5
 image: https://jekyllrb.com/img/octojekyll.png
 ---
-Actualizado 04 Mar 2019 · Rev 7
+Actualizado 10 Mar 2019 · Rev 8
 
 # Contenido
 
@@ -15,18 +15,18 @@ Actualizado 04 Mar 2019 · Rev 7
 - [6. Observaciones](#6-observaciones)
 
 
-# 1. Ejecutar servidor jekyll
+# Ejecutar servidor jekyll
 
-{% highlight bash %} bundle exec jekyll serve {% endhighlight %}
+{% highlight bash %}bundle exec jekyll serve {% endhighlight %}
 
 Server address: [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
-# 2. Crear un nuevo post 
+# Crear un nuevo post 
 
 Agrega un nuevo archivo markdown en la carpeta `_posts` con siguiente convensión de nombre `YYYY-MM-DD-name-of-post.md` automáticamente aparecerá como una entrada de blog. 
 
 
-# 3. Acceso directo
+# Acceso directo
 
 Revisa la documentación  [Jekyll docs][jekyll-docs] para conocer más acerca de Jekyll. 
 
@@ -35,7 +35,7 @@ Revisa la documentación  [Jekyll docs][jekyll-docs] para conocer más acerca de
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 
-# 4. Insertar imágenes
+# Insertar imágenes
 
 {% highlight html %}<img src="/images/404.jpg" style="width: 50px;"/>
 <img src="/images/404.jpg" style="width: 80px;"/>
@@ -57,13 +57,13 @@ Las para acceder a los assets utiliza el directorio
 * images
 
 
-# 5. Insertar archivos de código 
+# Insertar archivos de código 
 
 {% raw %}{% highlight ruby %}{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}{% endhighlight %}{% endraw %}
 
 {% highlight ruby %}{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}{% endhighlight %}
 
-# 6. Observaciones Generales
+# Observaciones Generales
 
 - El nombre de archivo de los post, códigos o imágenes no deben contener palabras reservadas.
 - jekyll se puede complementar con gemas
