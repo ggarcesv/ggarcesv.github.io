@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Guía Visual Studio Code 1.31
 categories: [Guia]
 image: https://cdn-images-1.medium.com/max/1200/1*1lVAbOjFoBHUjAkxnOtA2w.png

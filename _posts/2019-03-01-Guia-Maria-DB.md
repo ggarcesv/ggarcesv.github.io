@@ -1,9 +1,11 @@
 ---
-layout: post
 title: Guía PostgreSQL
-categories: [database]
-image: https://todopostgresql.com/wp-content/uploads/2018/10/postgresql11.png
+tags:
+  - Database
 ---
+
+https://todopostgresql.com/wp-content/uploads/2018/10/postgresql11.png
+
 
 # Instalación
 

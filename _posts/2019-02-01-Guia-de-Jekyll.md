@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Guía de Jekyll 3.8.5
 image: https://jekyllrb.com/img/octojekyll.png
 ---

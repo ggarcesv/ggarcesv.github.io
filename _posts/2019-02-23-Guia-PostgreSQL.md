@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Guía PostgreSQL
-categories: [database]
 image: https://todopostgresql.com/wp-content/uploads/2018/10/postgresql11.png
 ---
 Actualizado 01 Mar 2019 · Rev 2

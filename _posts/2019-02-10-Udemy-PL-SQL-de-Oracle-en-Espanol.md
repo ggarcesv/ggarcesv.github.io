@@ -1,5 +1,4 @@
 ﻿---
-layout: post
 title:  Revisión PL/SQL de Oracle en Español 2018 - Udemy
 categories: [backend, database]
 image: https://udemy-images.udemy.com/course/750x422/687118_2cf7_2.jpg
