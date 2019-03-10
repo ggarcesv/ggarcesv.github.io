@@ -4,7 +4,7 @@ title: Guía Visual Studio Code 1.31
 categories: [Guia]
 image: https://cdn-images-1.medium.com/max/1200/1*1lVAbOjFoBHUjAkxnOtA2w.png
 ---
-Actualizado 18 Feb 2019 · Rev 2
+Actualizado 04 Mar 2019 · Rev 3
 
 <!-- TOC -->
 
@@ -12,6 +12,8 @@ Actualizado 18 Feb 2019 · Rev 2
 - [2. Extensión: Markdown TOC de AlanWalk](#2-extensión-markdown-toc-de-alanwalk)
 
 <!-- /TOC -->
+
+Para formatear el código en windows: Shift + Alt + F
 
 # 1. Vista de archivos en orden alfabético mezclando carpetas y archivos.
 

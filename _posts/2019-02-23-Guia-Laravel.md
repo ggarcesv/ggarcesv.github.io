@@ -4,6 +4,8 @@ title: Guía Laravel
 categories: [backend]
 image: https://www.smythsys.es/wordpress/wp-content/uploads/2017/07/laravel.png
 ---
+Actualizado 01 Mar 2019 · Rev 2
+
 # Contenido
 
 - [Composer:](#composer)
@@ -11,13 +13,11 @@ image: https://www.smythsys.es/wordpress/wp-content/uploads/2017/07/laravel.png
 
 
 
-# Composer:
+# Composer
 
 Me sitúo en el "home" del usuario
 
 {% highlight bash %}cd ~ {% endhighlight %}
-
-
 
 Descargo el instalador
 {% highlight bash %}php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"{% endhighlight %}
@@ -92,11 +92,9 @@ Ahí debemos eliminar el ; de las extensiones php_pdo_pgsql y php_pgsql
 
 Luego en la consola. Finalizamos la actualización limpiando cache.
 
-composer dump-autoload
-
+{% highlight bash %}composer dump-autoload
 php artisan view:clear
-
-php artisan cache:clear
+php artisan cache:clear{% endhighlight %}
 
 Fuente: https://felipeahumada.wordpress.com/confuigurar-laravel-5-postgres/
 
@@ -130,4 +128,3 @@ Las rutas de las vistas se realizan en resources/views/usuario
 
 Para finalizar la configuración debemos actualizar el archivo de las rutas principal, este lo encontramos
 en routes/web.php y  agregamos /usuario como recurso
-

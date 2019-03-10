@@ -4,7 +4,7 @@ title: Guía Debian 9.8
 categories: [servidores]
 image: https://www.muycomputer.com/wp-content/uploads/2018/03/Debian_MicrosoftStore.jpg
 ---
-Actualizado 03 Mar 2019 · Rev 3
+Actualizado 05 Mar 2019 · Rev 4
 
 
 # Contenido
@@ -48,16 +48,14 @@ Actualizado 03 Mar 2019 · Rev 3
 
 # Conociendo los directorios
 
-Se dice que en los sistemas basados en Linux todo es un archivo o carpeta. Se utiliza el símbolo / para separar carpetas en una ruta.
-
-
-{% highlight bash %}/{% endhighlight %}
-Carpeta principal o raíz
-
+Se dice que en los sistemas basados en Linux todo es un archivo o carpeta. 
+Se utiliza el símbolo `/` para separar carpetas en una ruta.
 
 {% highlight bash %}/usr/share/doc {% endhighlight %}
 Ruta de un sub-directorio con la documentación de todos los paquetes instalados
 
+{% highlight bash %}/{% endhighlight %} 
+Carpeta principal o raíz
 
 {% highlight bash %}/home {% endhighlight %}
 Se almacenan todos los perfiles de de usuarios exceptuando al usuario root que se ubica en /root
@@ -94,7 +92,7 @@ Directorio lanzadores
 * https://www.geektopia.es/es/technology/2013/01/18/articulos/como-crear-accesos-directos-en-ubuntu-debian-desde-el-shell.html
 </details><br>
 
-# Ajustes posteriores
+# Configuración Inicial
 
 >Los comandos en unix son case sensitive
 
@@ -149,9 +147,9 @@ Verificamos que los cambios se hayan realizado verificando los nombres de los di
 
 Debian testing es una rama de desarrollo de la distribución de linux Debian. Esta nos permite actualizar nuestro sistema a los paquetes más actualizados. 
 
-{% highlight bash %}apt-get update; apt-get upgrade
-apt-get autoremove
-apt-get autoclean
+{% highlight bash %}aptupdate; apt upgrade
+apt autoremove
+apt autoclean
 {% endhighlight %}
 
 
@@ -175,12 +173,12 @@ Cambiamos a:
 
 Luego actualizamos los repositorios y aplicaciones 
 
-{% highlight bash %}apt-get update; apt-get upgrade{% endhighlight %}
+{% highlight bash %}apt update; apt upgrade{% endhighlight %}
 
 reiniciamos
 
-{% highlight bash %}apt-get update
-apt-get dist-upgrade{% endhighlight %}
+{% highlight bash %}apt update
+apt full-upgrade{% endhighlight %}
 
 reiniciamos
 
@@ -228,7 +226,7 @@ Permite ver un resumen de los comandos, su función y comandos relacionados
 
 **passwd**: Permite cambiar el password de un usuario
 
-{% highlight bash %}sudo passwd GGARCES{% endhighlight %}
+{% highlight bash %}passwd GGARCES{% endhighlight %}
     
 **clear**: Permite Limpiar la pantalla
 
@@ -300,7 +298,7 @@ Para eliminar un directorio de forma recursiva (con archivos y sub-carpetas con 
 
 To execute a binary or .run file in Linux from the shell, use the dot forward slash friend
 
-{% highlight bash %}sudo ./jdownload.sh{% endhighlight %}
+{% highlight bash %}./jdownload.sh{% endhighlight %}
 
 and if it fails say because of permissions, you could try this before executing it
 
@@ -309,7 +307,7 @@ and if it fails say because of permissions, you could try this before executing 
 
 or in properties check option executable file then execute it
 
-{% highlight bash %}sudo ./jdownload.sh{% endhighlight %}
+{% highlight bash %}./jdownload.sh{% endhighlight %}
 
 Referencia: https://stackoverflow.com/questions/9477157/how-to-run-binary-file-in-linux
 
@@ -317,68 +315,119 @@ Referencia: https://stackoverflow.com/questions/9477157/how-to-run-binary-file-i
 
 ### Instalar una aplicación deb
 
-{% highlight bash %}sudo dpkg -i google-chrome-stable_current_amd64.deb{% endhighlight %}
+{% highlight bash %}dpkg -i google-chrome-stable_current_amd64.deb{% endhighlight %}
 
 ### instalar varias aplicaciones deb
 
 {% highlight bash %}cd directoriodelosdeb
-sudo dpkg -i *.deb{% endhighlight %}
+dpkg -i *.deb{% endhighlight %}
 
 
 ### Instalar dependencias pendientes
 
-{% highlight bash %}apt-get -f install
-dpkg -i <package>.deb{% endhighlight %}
+{% highlight bash %}apt -f install dpkg -i <package>.deb{% endhighlight %}
 
 
 ### Desinstalar una aplicación
 
-{% highlight bash %}sudo apt-get purge google-chrome-stable
-sudo apt-get autoremove{% endhighlight %}
+{% highlight bash %}apt remove application{% endhighlight %}
+
+### Desinstalar una aplicación y sus dependencias
+
+{% highlight bash %}apt remove --auto-remove application{% endhighlight %}
+
+### Desinstalar una aplicación y eliminar su config/data
+
+{% highlight bash %}apt purge application{% endhighlight %}
+
+### Desinstalar una aplicación, sus dependencias y eliminar su config/data
+
+{% highlight bash %}apt purge --auto-remove application{% endhighlight %}
+
+<details><summary>Fuente:</summary>
+* http://installion.co.uk/debian/stretch/main/m/minissdpd/uninstall/index.html
+</details><br>
+
+
 
 ### Repositorios con PPA
 
 #### Agregar un repositorio
-{% highlight bash %}sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily
-sudo apt-get update{% endhighlight %}
+{% highlight bash %}add-apt-repository ppa:christian-boxdoerfer/fsearch-daily
+apt update{% endhighlight %}
 
 #### Eliminar un repositorio 
-{% highlight bash %}sudo apt-add-repository --remove https://launchpad.net/~christian-boxdoerfer/+archive/ubuntu/fsearch-daily{% endhighlight %}
+{% highlight bash %}apt-add-repository --remove https://launchpad.net/~christian-boxdoerfer/+archive/ubuntu/fsearch-daily{% endhighlight %}
 
 
 Otra forma es utilizando el paquete ppa-purge
 
 Instalación paquete para habilitar opción:
-{% highlight bash %}sudo apt-get install ppa-purge{% endhighlight %}
+{% highlight bash %}apt install ppa-purge{% endhighlight %}
 
 Remover repositorio utilizando ppa-purge:
-{% highlight bash %}sudo ppa-purge ppa:ubuntu-mozilla-daily/firefox-aurora{% endhighlight %}
+{% highlight bash %}ppa-purge ppa:ubuntu-mozilla-daily/firefox-aurora{% endhighlight %}
 
 
 
 ## Procesos
 
-### Ver procesos
-### Detener procesos
+### Ver
 
+**ps**: El comando más usado para manipular procesos en Linux. Muestra todos los procesos y además puedes realizar operaciones con ellos. (-A -> ALL)
+{% highlight bash %}ps -A{% endhighlight %}
+<small>Devuelve lista con todos los procesos </small>
 
-## Servicios
+{% highlight bash %}ps -A | grep pos{% endhighlight %}
+<small>Devuelve lista con todos los procesos que incluyen pos en su nombre</small>
 
-### Iniciar
-{% highlight bash %}sudo systemctl start php5-fpm.service{% endhighlight %}
+**top**: monitor de procesos por default.
+
+**htop**: Es un “top” mejorado, es más fácil de interpretar y además se pueden realizar operaciones como parar un proceso usando las teclas. Para instalar:
+
+{% highlight bash %}apt install htop{% endhighlight %}
+
+**pstree**: Visualiza todos los procesos en forma de árbol para mostrar sus dependencias.
+
 
 ### Detener
-{% highlight bash %}sudo systemctl stop php5-fpm.service{% endhighlight %}
+
+**kill**: Comando para detener un proceso, funciona dando su ID.
+
+### Dar prioridad
+
+**renice**: Este comando cambia el valor “nice” de un proceso en ejecución. Un valor de -19 es de muy alta prioridad, mientras que un valor 19 es de baja prioridad. Por defecto el valor es el 0. Necesita el PID del proceso:
+
+{% highlight bash %}renice -19 PID{% endhighlight %}
+
+<details><summary>Fuente:</summary>
+* https://www.cyberhades.com/2012/03/05/10-comandos-utiles-para-manejar-los-procesos-desde-la-consola-linux/
+</details><br>
+
+
+## Servicios / Demonios
+
+### Estado actual
+{% highlight bash %}systemctl status application.service{% endhighlight %}
+
+### Iniciar
+{% highlight bash %}systemctl start application.service{% endhighlight %}
+
+### Detener
+{% highlight bash %}systemctl stop application.service{% endhighlight %}
 
 ### Reiniciar
-{% highlight bash %}sudo systemctl restart php5-fpm.service{% endhighlight %}
+{% highlight bash %}systemctl restart application.service{% endhighlight %}
 
 ### Habilitar
+{% highlight bash %}systemctl enable application.service{% endhighlight %}
 
 ### Deshabilitar 
+{% highlight bash %}systemctl disable application.service{% endhighlight %}
+
 **minissdpd 1.5.20180223 (track of UPnP devices)**: Al actualizar a la rama testing en Debian 9.8.0 se solicita al usuario configurar el servicio minissdpd, al activar el servicio y dejar configuración por defecto, genera un error al iniciar el sistema. Este servicio no posee una utilidad relevante, para deshabilitar:
 
-{% highlight bash %}sudo update-rc.d minissdpd disable{% endhighlight %}
+{% highlight bash %}update-rc.d minissdpd disable{% endhighlight %}
 
 /etc/default/minissdpd
 
@@ -386,6 +435,7 @@ MiniSSDPd_INTERFACE_ADDRESS="enp0s3"
 MiniSSDPd_OTHER_OPTIONS="-6" 
 
 <details><summary>Fuente:</summary>
+* https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
 * http://divideandconquer.se/2013/08/09/disable-some-useless-stuff-in-raspbian/
 * https://miniupnp.tuxfamily.org/forum/viewtopic.php?p=5075 - [Solved] Minissdpd on Debian Testing spamming log files
 </details><br>
@@ -422,18 +472,18 @@ Partición: /tmp
 
 Descargar paquetes
 
-{% highlight bash %}sudo apt-get install exfat-fuse exfat-utils{% endhighlight %}
+{% highlight bash %}apt install exfat-fuse exfat-utils{% endhighlight %}
 
 
 Los entornos gráficos montan automáticamente la partición. 
 En caso de que prefiere montar el disco del terminal, ejecute el siguiente comando:
 
-{% highlight bash %}sudo mount -t exfat /dev/sdb1 /punto/a/montar{% endhighlight %}
+{% highlight bash %}mount -t exfat /dev/sdb1 /punto/a/montar{% endhighlight %}
 
 Asegúrese de cambiar /dev/sdb1 al dispositivo apropiado para su sistema y /punto/a/montar al directorio que se va utilizar para montar el disco. 
 En caso de que no sepa cuál es el dispositivo, ejecute el siguiente comando:
 
-{% highlight bash %}sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL{% endhighlight %}
+{% highlight bash %}lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL{% endhighlight %}
 
 
 Este comando muestra una lista de todos los discos en el sistema con la siguiente información: Nombre, sistema de archivos, tamaño, punto de montaje, etiqueta. 
@@ -492,7 +542,7 @@ You can get **your current inotify** file watch limit by executing:
 
 **Change Inotify**:
 
-{% highlight bash %}echo "fs.inotify.max_user_watches=204800" | sudo tee -a /etc/sysctl.conf{% endhighlight %}
+{% highlight bash %}echo "fs.inotify.max_user_watches=204800" | tee -a /etc/sysctl.conf{% endhighlight %}
 
 
 
@@ -503,13 +553,32 @@ Este modifica temporalmente los inotify en el instante sin reiniciar, al reinici
 
 To adjust the limit immediately, run:
 
-{% highlight bash %}sudo sh -c 'echo 204800 > /proc/sys/fs/inotify/max_user_watches'{% endhighlight %}
+{% highlight bash %}sh -c 'echo 204800 > /proc/sys/fs/inotify/max_user_watches'{% endhighlight %}
 
 
-Ref: https://docs.syncthing.net/users/faq.html#inotify-limits
+Fuente: 
+
+https://docs.syncthing.net/users/faq.html#inotify-limits
 
 
 # Comandos mas utilizados
+
+## apt-get es obsoleto, apt es lo nuevo
+
+apt install <-- apt-get install	--> Installs a package
+apt remove <--  apt-get remove --> Removes a package
+apt purge <-- apt-get purge	--> Removes package with configuration
+apt update <-- apt-get update --> Refreshes repository index
+apt upgrade	<-- apt-get upgrade	--> Upgrades all upgradable packages
+apt autoremove <-- apt-get autoremove --> Removes unwanted packages
+apt full-upgrade <-- apt-get dist-upgrade --> Upgrades packages with auto-handling of dependencies
+apt search <-- apt-cache search	--> Searches for the program
+apt show <-- apt-cache show	--> Shows package details
+
+Fuente:
+
+https://itsfoss.com/apt-vs-apt-get-difference/
+
 ## Visualización y edición de texto
 
 **cat**: Para ver el contenido de un archivo pequeño, si es fichero grande pasa de largo sin pausar a la ultima parte.
@@ -544,11 +613,11 @@ Ref: https://docs.syncthing.net/users/faq.html#inotify-limits
 
 **Tee**: Permite modificar configuraciones por comandos.
 
-{% highlight bash %}echo "newline" | sudo tee -a /etc/file.conf{% endhighlight %}
+{% highlight bash %}echo "newline" | tee -a /etc/file.conf{% endhighlight %}
 
 Ejemplo:
 
-{% highlight bash %}echo "fs.inotify.max_user_watches=204800" | sudo tee -a /etc/sysctl.conf{% endhighlight %}
+{% highlight bash %}echo "fs.inotify.max_user_watches=204800" | tee -a /etc/sysctl.conf{% endhighlight %}
 
 Ref: https://linuxize.com/post/linux-tee-command/
 
