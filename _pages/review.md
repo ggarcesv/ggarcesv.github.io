@@ -20,16 +20,14 @@ author_profile: true
 
 
 
-
-
 # Review Frontend
 
-| Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores          |
-| --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| 2019    | Asignatura | freeCodeCamp       | [Basic HTML and HTML5]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
-| 2019    | Asignatura | freeCodeCamp       | [Basic CSS]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
-| 2019    | Asignatura | freeCodeCamp       | [Applied Visual Design]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
-| 2019    | Asignatura | freeCodeCamp       | [Applied Accessibility]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
-| 2019    | Asignatura | freeCodeCamp       | [Responsive Web Design Principles]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
-| 2019    | Asignatura | freeCodeCamp       | [CSS Flexbox]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
-| 2019    | Asignatura | freeCodeCamp       | [CSS Grid]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza. Jonathan
+| Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores                                           |
+| --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| 2019    | Asignatura | freeCodeCamp       | [Basic HTML and HTML5]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                              | Larson, Quincy & Thousands of active contributors |
+| 2019    | Asignatura | freeCodeCamp       | [Basic CSS]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                                         | Larson, Quincy & Thousands of active contributors |
+| 2019    | Asignatura | freeCodeCamp       | [Applied Visual Design]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                             | Larson, Quincy & Thousands of active contributors |
+| 2019    | Asignatura | freeCodeCamp       | [Applied Accessibility]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                             | Larson, Quincy & Thousands of active contributors |
+| 2019    | Asignatura | freeCodeCamp       | [Responsive Web Design Principles]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                  | Larson, Quincy & Thousands of active contributors |
+| 2019    | Asignatura | freeCodeCamp       | [CSS Flexbox]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                                       | Larson, Quincy & Thousands of active contributors |
+| 2019    | Asignatura | freeCodeCamp       | [CSS Grid]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                                          | Larson, Quincy & Thousands of active contributors |
