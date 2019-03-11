@@ -1,7 +1,7 @@
 ---
 title: Guía de Jekyll 3.8.5
-collection: guides
 permalink: /jekyll
+date: 2019-02-01
 ---
 
 
