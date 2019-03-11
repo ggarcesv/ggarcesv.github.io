@@ -1,6 +1,6 @@
 ---
 title: "Sistema Inventario de Libros"
-excerpt: "Sistema realizado en Java 8 para Celulares Android en Servidor LAMP<br/><img src='/images/500x300.png'>"
+excerpt: "Sistema realizado en Java 8 para Celulares Android con Servidor LAMP<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
