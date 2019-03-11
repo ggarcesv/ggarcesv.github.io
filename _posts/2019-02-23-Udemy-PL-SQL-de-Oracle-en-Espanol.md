@@ -198,4 +198,5 @@ Actualmente posee:
 # Excepciones Personalizadas
 {% highlight sql %}{% include 2019-02-10-Udemy-PL-SQL-de-Oracle-en-Espanol/045-Excepciones-Personalizadas.sql%}{% endhighlight %}
 
->Actualizado 23 Feb 2019 · Rev 5
+Rev 5 - 23 Feb 2019
+Rev 1 - 10 Feb 2019
