@@ -1,10 +1,10 @@
 ﻿---
 permalink: /review/2018-plsql-de-oracle-en-espanol
-title:  Revisión PL/SQL de Oracle en Español 2018 (Udemy)
+title:  Revisión PL/SQL de Oracle en Español 
 categories: [DATABASE]
 ---
 
-Revisión de videocurso de pl/sql de oracle.
+Revisión de videocurso de pl/sql de oracle 2018.
 
 Recomiendo este curso si necesitas refrescar conocimientos esenciales de pl/sql o estas iniciando en esta área. Lo puedes comprar en el siguiente [enlace].
 
@@ -19,52 +19,50 @@ Actualmente posee:
 
 
 # Contenido
-
-- [Hola Mundo](#hola-mundo)
-- [Variables Básicas](#variables-básicas)
-- [Constantes](#constantes)
-- [Valores querys a Variables INTO](#valores-querys-a-variables-into)
-- [Length Trim Lower Upper Replace Substr Sysdate Add_months To_char NVL](#length-trim-lower-upper-replace-substr-sysdate-add_months-to_char-nvl)
-- [Arreglos](#arreglos)
-- [Tarea 1 Operaciones](#tarea-1-operaciones)
-- [Condiciones IF THEN ELSE BETWEEN END IF](#condiciones-if-then-else-between-end-if)
-- [Condiciones Anidadas IF THEN ELSIF](#condiciones-anidadas-if-then-elsif)
-- [CASE RANDOM ROUND](#case-random-round)
-- [Operadores Evaluación LIKE BETWEEN IN IS NULL](#operadores-evaluación-like-between-in-is-null)
-- [Tarea 2 Condiciones](#tarea-2-condiciones)
-- [Ciclos FOR](#ciclos-for)
-- [Ciclos EXIT CONTINUE MOD](#ciclos-exit-continue-mod)
-- [Ciclos LOOP EXIT ENDLOOP](#ciclos-loop-exit-endloop)
-- [Ciclos WHILE](#ciclos-while)
-- [Tarea 3 FOR](#tarea-3-for)
-- [Tarea 4 Factorial](#tarea-4-factorial)
-- [Database Empleado](#database-empleado)
-- [Función Crea](#función-crea)
-- [Función Ejecuta](#función-ejecuta)
-- [Función Parámetros Entrada Crea](#función-parámetros-entrada-crea)
-- [Función Parámetros Entrada Ejecuta](#función-parámetros-entrada-ejecuta)
-- [Función Edad Crea](#función-edad-crea)
-- [Función Edad Ejecuta](#función-edad-ejecuta)
-- [Función en Bloque PL/SQL Crea Ejecuta](#función-en-bloque-plsql-crea-ejecuta)
-- [Procedimientos Almacenados Crea](#procedimientos-almacenados-crea)
-- [Procedimientos Almacenados Ejecuta](#procedimientos-almacenados-ejecuta)
-- [Procedimientos Almacenados Parámetros IN OUT Crea](#procedimientos-almacenados-parámetros-in-out-crea)
-- [Procedimientos Almacenados Parámetros IN OUT Ejecuta](#procedimientos-almacenados-parámetros-in-out-ejecuta)
-- [Creación Tabla](#creación-tabla)
-- [Tarea 5 Crea Función](#tarea-5-crea-función)
-- [Tarea 5 Ejecuta](#tarea-5-ejecuta)
-- [Cursor](#cursor)
-- [Cursor Implícito](#cursor-implícito)
-- [Cursor Explícito](#cursor-explícito)
-- [Table Base Record](#table-base-record)
-- [Registro Definido por Usuario](#registro-definido-por-usuario)
-- [Registro Definido por Usuario como Parámetro](#registro-definido-por-usuario-como-parámetro)
-- [Tarea 6 Base Requisito](#tarea-6-base-requisito)
-- [Tarea 6 v1 Cursor](#tarea-6-v1-cursor)
-- [Tarea 6 v2 Procedimiento](#tarea-6-v2-procedimiento)
-- [Manejo Excepciones](#manejo-excepciones)
-- [Excepciones Personalizadas](#excepciones-personalizadas)
-
+<small>→ [Hola Mundo](#hola-mundo)</small><br>
+<small>→ [Variables Básicas](#variables-básicas)</small><br>
+<small>→ [Constantes](#constantes)</small><br>
+<small>→ [Valores querys a Variables INTO](#valores-querys-a-variables-into)</small><br>
+<small>→ [Length Trim Lower Upper Replace Substr Sysdate Add_months To_char NVL](#length-trim-lower-upper-replace-substr-sysdate-add_months-to_char-nvl)</small><br>
+<small>→ [Arreglos](#arreglos)</small><br>
+<small>→ [Tarea 1 Operaciones](#tarea-1-operaciones)</small><br>
+<small>→ [Condiciones IF THEN ELSE BETWEEN END IF](#condiciones-if-then-else-between-end-if)</small><br>
+<small>→ [Condiciones Anidadas IF THEN ELSIF](#condiciones-anidadas-if-then-elsif)</small><br>
+<small>→ [CASE RANDOM ROUND](#case-random-round)</small><br>
+<small>→ [Operadores Evaluación LIKE BETWEEN IN IS NULL](#operadores-evaluación-like-between-in-is-null)</small><br>
+<small>→ [Tarea 2 Condiciones](#tarea-2-condiciones)</small><br>
+<small>→ [Ciclos FOR](#ciclos-for)</small><br>
+<small>→ [Ciclos EXIT CONTINUE MOD](#ciclos-exit-continue-mod)</small><br>
+<small>→ [Ciclos LOOP EXIT ENDLOOP](#ciclos-loop-exit-endloop)</small><br>
+<small>→ [Ciclos WHILE](#ciclos-while)</small><br>
+<small>→ [Tarea 3 FOR](#tarea-3-for)</small><br>
+<small>→ [Tarea 4 Factorial](#tarea-4-factorial)</small><br>
+<small>→ [Database Empleado](#database-empleado)</small><br>
+<small>→ [Función Crea](#función-crea)</small><br>
+<small>→ [Función Ejecuta](#función-ejecuta)</small><br>
+<small>→ [Función Parámetros Entrada Crea](#función-parámetros-entrada-crea)</small><br>
+<small>→ [Función Parámetros Entrada Ejecuta](#función-parámetros-entrada-ejecuta)</small><br>
+<small>→ [Función Edad Crea](#función-edad-crea)</small><br>
+<small>→ [Función Edad Ejecuta](#función-edad-ejecuta)</small><br>
+<small>→ [Función en Bloque PL/SQL Crea Ejecuta](#función-en-bloque-plsql-crea-ejecuta)</small><br>
+<small>→ [Procedimientos Almacenados Crea](#procedimientos-almacenados-crea)</small><br>
+<small>→ [Procedimientos Almacenados Ejecuta](#procedimientos-almacenados-ejecuta)</small><br>
+<small>→ [Procedimientos Almacenados Parámetros IN OUT Crea](#procedimientos-almacenados-parámetros-in-out-crea)</small><br>
+<small>→ [Procedimientos Almacenados Parámetros IN OUT Ejecuta](#procedimientos-almacenados-parámetros-in-out-ejecuta)</small><br>
+<small>→ [Creación Tabla](#creación-tabla)</small><br>
+<small>→ [Tarea 5 Crea Función](#tarea-5-crea-función)</small><br>
+<small>→ [Tarea 5 Ejecuta](#tarea-5-ejecuta)</small><br>
+<small>→ [Cursor](#cursor)</small><br>
+<small>→ [Cursor Implícito](#cursor-implícito)</small><br>
+<small>→ [Cursor Explícito](#cursor-explícito)</small><br>
+<small>→ [Table Base Record](#table-base-record)</small><br>
+<small>→ [Registro Definido por Usuario](#registro-definido-por-usuario)</small><br>
+<small>→ [Registro Definido por Usuario como Parámetro](#registro-definido-por-usuario-como-parámetro)</small><br>
+<small>→ [Tarea 6 Base Requisito](#tarea-6-base-requisito)</small><br>
+<small>→ [Tarea 6 v1 Cursor](#tarea-6-v1-cursor)</small><br>
+<small>→ [Tarea 6 v2 Procedimiento](#tarea-6-v2-procedimiento)</small><br>
+<small>→ [Manejo Excepciones](#manejo-excepciones)</small><br>
+<small>→ [Excepciones Personalizadas](#excepciones-personalizadas)</small><br>
 
 # Hola Mundo
 {% highlight sql %}{% include 2019-02-10-Udemy-PL-SQL-de-Oracle-en-Espanol/004-Hola-Mundo.sql%}{% endhighlight %}
@@ -198,5 +196,5 @@ Actualmente posee:
 # Excepciones Personalizadas
 {% highlight sql %}{% include 2019-02-10-Udemy-PL-SQL-de-Oracle-en-Espanol/045-Excepciones-Personalizadas.sql%}{% endhighlight %}
 
-Rev 5 - 23 Feb 2019
+Rev 5 - 23 Feb 2019 <br>
 Rev 1 - 10 Feb 2019

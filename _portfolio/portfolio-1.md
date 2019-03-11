@@ -1,5 +1,5 @@
 ---
-title: "Sistema Gestión de Alumnos"
+title: "Sistema Gestión de Alumnos 2018"
 excerpt: "Sistema Web desarrollado en PHP 7 / laravel 5 con Servidor LAMP<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
