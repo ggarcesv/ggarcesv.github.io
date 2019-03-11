@@ -1,4 +1,3 @@
-# main links links
 main:
   - title: "Blog"
     url: /blog/
@@ -12,7 +11,7 @@ main:
   - title: "Portfolio"
     url: /portfolio/
         
-  - title: "Curriculum"
+  - title: "Currículum"
     url: /skills/
     
   - title: "Contacto"
