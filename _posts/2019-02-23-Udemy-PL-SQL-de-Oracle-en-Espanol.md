@@ -1,7 +1,7 @@
 ﻿---
 permalink: /review/2018-plsql-de-oracle-en-espanol
 title:  Revisión PL/SQL de Oracle en Español 2018 (Udemy)
-categories: [Database]
+categories: [DATABASE]
 ---
 
 Revisión de videocurso de pl/sql de oracle.
@@ -13,8 +13,8 @@ El docente del curso es super claro y específico para explicar los conceptos, n
 [enlace]: https://www.udemy.com/share/1000TwCEAcdlZRTQ==/
 
 Actualmente posee: 
-- 500 valoraciones con 4,5 / 5 de calidad 
-- 1.389 estudiantes inscritos 
+- 515 valoraciones con 4,5 / 5 de calidad 
+- 1.417 estudiantes inscritos 
 - 03:32 horas de video
 
 
