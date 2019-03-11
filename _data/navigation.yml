@@ -6,8 +6,8 @@ main:
   - title: "Guías"
     url: /guides/
 
-  - title: "Presentaciones"
-    url: /talks/    
+  - title: "Review"
+    url: /review/    
 
   - title: "Portfolio"
     url: /portfolio/
