@@ -1,9 +1,10 @@
 ---
+permalink: /php/
 title: Guía PHP 7
-tags:
-  - Backend
-
+categories: [BACKEND]
+Date: 2019-02-23
 ---
+
 Actualizado 01 Mar 2019 · Rev 2
 
 http://www.sectornueve.com/wp-content/uploads/2018/01/php7.jpg

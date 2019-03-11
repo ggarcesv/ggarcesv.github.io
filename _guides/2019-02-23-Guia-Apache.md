@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Guía Apache
-categories: [servidores]
+categories: [SERVIDORES]
 image: 
 ---
 

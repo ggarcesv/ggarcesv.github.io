@@ -1,8 +1,8 @@
 ---
-layout: post
+permalink: /virtualbox/
 title: Guía Virtualbox
-categories: [servidores]
-image: 
+categories: [SERVERS]
+Date: 2019-02-22
 ---
 <!-- TOC -->
 

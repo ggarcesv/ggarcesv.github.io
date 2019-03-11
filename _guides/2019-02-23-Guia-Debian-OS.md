@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Guía Debian 9.8
 categories: [servidores]
 image: https://www.muycomputer.com/wp-content/uploads/2018/03/Debian_MicrosoftStore.jpg

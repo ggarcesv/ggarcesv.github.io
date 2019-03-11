@@ -1,7 +1,15 @@
 ---
+permalink: /postgresql/
 title: Guía PostgreSQL
-image: https://todopostgresql.com/wp-content/uploads/2018/10/postgresql11.png
+categories: [DATABASE]
+Date: 2019-02-23
 ---
+
+
+
+
+image: https://todopostgresql.com/wp-content/uploads/2018/10/postgresql11.png
+
 Actualizado 01 Mar 2019 · Rev 2
 
 {% highlight bash %}apt-get install postgresql postgresql-11 postgresql-client-11 postgresql-client-common postgresql-common sysstat {% endhighlight %}

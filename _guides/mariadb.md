@@ -1,7 +1,8 @@
 ---
-title: Guía PostgreSQL
-tags:
-  - Database
+permalink: /mariadb/
+title: Guía MariaDB
+categories: [DATABASE]
+Date: 2019-03-01
 ---
 
 https://todopostgresql.com/wp-content/uploads/2018/10/postgresql11.png

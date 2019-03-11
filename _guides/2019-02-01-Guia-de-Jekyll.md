@@ -1,8 +1,12 @@
 ---
 title: Guía de Jekyll 3.8.5
-image: https://jekyllrb.com/img/octojekyll.png
+collection: guides
+permalink: /jekyll
 ---
-Actualizado 10 Mar 2019 · Rev 8
+
+
+https://jekyllrb.com/img/octojekyll.png
+
 
 # Contenido
 
@@ -69,3 +73,6 @@ Las para acceder a los assets utiliza el directorio
 - Github Page solo soporta alguna gemas [pages.github.com/versions](https://pages.github.com/versions/) 
 - Si utilizamos gemas de terceros en local, sus etiquetas no podrán utilizarse en github page.
 - Se recomienda utilizar [GitHub Pages Ruby Gem](https://github.com/github/pages-gem) como configuración de entorno local de Jekyll para sincronizar con GitHub Pages.
+
+
+>Actualizado 10 Mar 2019 · Rev 8

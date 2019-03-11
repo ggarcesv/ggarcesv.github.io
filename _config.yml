@@ -1,9 +1,9 @@
 # Site Settings
 locale                   : "es-ES"
-title                    : "Your Name / Site Title"
+title                    : "  Giuliano Garcés  "
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Giuliano Garcés"
+description              : &description "Informático, investigador y analista de datos."
 url                      : https://ggarcesv.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 #repository               : "academicpages/academicpages.github.io"
@@ -57,21 +57,13 @@ social:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  foursquare       :
-  github           : "academicpages"
-  keybase          :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  name             : "Giuliano Garcés"
+  avatar           : "https://avatars0.githubusercontent.com/u/14808145"
+  bio              : "Padre de Ángel Benjamín 👨‍👦
+Investigador 🕵‍ Melómano 🎼
+Bitcoiner 🔗 Programador 👨‍💻 Archivista digital📚"
+  github           : ggarcesv
+  linkedin         : ggarcesv
   stackoverflow    : # http://stackoverflow.com/users/123456/username
 
 
@@ -130,7 +122,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  guides:
     output: true
     permalink: /:collection/:path/
   portfolio:
@@ -170,10 +162,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _guides
   - scope:
       path: ""
-      type: publications
+      type: guides
     values:
       layout: single
       author_profile: true

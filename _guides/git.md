@@ -1,8 +1,11 @@
 ---
+permalink: /git/
 title: Guía Git 2.20.1
-categories: [Servidores]
-image: 
+categories: [SERVER]
+Date: 2019-02-23
 ---
+
+
 
 Sitio Oficial: https://git-scm.com/downloads
 Git Cheatsheet - kapeli.com/cheat_sheets/Git.docset/Contents/Resources/Documents/index

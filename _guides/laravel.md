@@ -1,9 +1,13 @@
 ---
-layout: post
+permalink: /laravel/
 title: Guía Laravel
-categories: [backend]
-image: https://www.smythsys.es/wordpress/wp-content/uploads/2017/07/laravel.png
+categories: [BACKEND]
+Date: 2019-02-23
 ---
+
+
+image: https://www.smythsys.es/wordpress/wp-content/uploads/2017/07/laravel.png
+
 Actualizado 01 Mar 2019 · Rev 2
 
 # Contenido
