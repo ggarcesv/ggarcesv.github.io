@@ -11,14 +11,14 @@ author_profile: true
 | 2018    | Video      | Udemy              | [PL/SQL de Oracle en Español]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                       | Herrera, Fernando     |
 | 2018    | Book       | O'Reilly           |                                                                                                                     |                       |
 
-
+<br><br>
 # Review Backend PHP Laravel - Java Spring - C# .NET - JS Node
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores          |
 | --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | 2019    | Asignatura | IP Virginio Gomez  | [Desarrollo de aplicaciones web con ASP.NET MVC + Entity Framework]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol) | Muñoz Mendoza, Jonathan |
 
-
+<br><br>
 # Review Software Engineering - Project Management
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores          |
@@ -26,7 +26,7 @@ author_profile: true
 | 2019    | Book       | McGraw Hill        | [Software Engineering - A Practitioners Approach 8Ed/2014]({% include base_path %}/review/2019-software-engineering-a-practitioners-approach-8e) | Pressman, Roger S.; Maxin, Bruce R. |
 
 
-
+<br><br>
 # Review Frontend HTML5 - CSS3 - Bootstrap - React - Angular
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores                                           |
