@@ -12,7 +12,7 @@ author_profile: true
 | 2018    | Video      | Udemy              | [PL/SQL de Oracle en Español]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                       | Herrera, Fernando     |
 | 2018    | Book       | O'Reilly           |                                                                                                                     |                       |
 
-# Review Backend
+# Review Backend PHP Laravel - Java Spring - C# .NET - JS Node
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores          |
 | --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
@@ -20,7 +20,7 @@ author_profile: true
 
 
 
-# Review Frontend
+# Review Frontend HTML5 - CSS3 - Bootstrap - React - Angular
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores                                           |
 | --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -33,9 +33,9 @@ author_profile: true
 | 2019    | Asignatura | freeCodeCamp       | [CSS Grid]({% include base_path %}/review/2018-plsql-de-oracle-en-espanol)                                          | Larson, Quincy; Thousands of active contributors |
 
 
-# Review Software Engineering and Project Management
+# Review Software Engineering - Project Management
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores          |
 | --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| 2019    | Book       | McGraw Hill        | [Software Engineering (A Practitioners Approach), 8Ed/2014]({% include base_path %}/review/2019-software-engineering-a-practitioners-approach-8e | Pressman, Roger S.; Maxin, Bruce R. |
+| 2019    | Book       | McGraw Hill        | [Software Engineering - A Practitioners Approach 8Ed/2014]({% include base_path %}/review/2019-software-engineering-a-practitioners-approach-8e) | Pressman, Roger S.; Maxin, Bruce R. |
 
