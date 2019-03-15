@@ -64,7 +64,7 @@ Las para acceder a los assets utiliza el directorio
 
 {% raw %}{% highlight ruby %}{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}{% endhighlight %}{% endraw %}
 
-{% highlight ruby %}{% include 2019-02-01-Guia-de-Jekyll/c1.rb %}{% endhighlight %}
+{% highlight ruby %}{% include 2019/guias/jekyll/c1.rb %}{% endhighlight %}
 
 # Observaciones Generales
 
