@@ -2,7 +2,6 @@
 permalink: /virtualbox/
 title: Guía Virtualbox
 categories: [SERVERS]
-Date: 2019-02-22
 ---
 <!-- TOC -->
 

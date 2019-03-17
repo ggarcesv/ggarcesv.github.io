@@ -2,7 +2,6 @@
 permalink: /postgresql/
 title: Guía PostgreSQL
 categories: [DATABASE]
-Date: 2019-02-23
 ---
 
 
