@@ -1,5 +1,5 @@
 ---
-permalink: /review/2019-software-engineering-a-practitioners-approach-8e
+permalink: /review/software-engineering-a-practitioners-approach-8e
 title:  Revisión Ingeniería de Software (Un enfoque práctico), 8Ed/2014 
 categories: [SOFTWARE-ENGINEERING]
 ---

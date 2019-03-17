@@ -23,7 +23,7 @@ author_profile: true
 
 | Año     | Tipo       | Entidad            | Nombre                                                                                                              | Autores          |
 | --------| -----------| -------------------| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| 2019    | Book       | McGraw Hill        | [Software Engineering - A Practitioners Approach 8Ed/2014]({% include base_path %}/review/2019-software-engineering-a-practitioners-approach-8e) | Pressman, Roger S.; Maxin, Bruce R. |
+| 2019    | Book       | McGraw Hill        | [Software Engineering - A Practitioners Approach 8Ed/2014]({% include base_path %}/review/software-engineering-a-practitioners-approach-8e) | Pressman, Roger S.; Maxin, Bruce R. |
 
 
 <br><br>
