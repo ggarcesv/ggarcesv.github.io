@@ -17,7 +17,7 @@ El software es:
 
 El software es un elemento lógico, el hardware un elemento físico. 
 El hardware se desgasta con su utilización y se deteriora según el ambiente al que se encuentre expuesto.
-El software no se desgasta con su utilización pero sí se deteriora a medida que se realizan cambios en su lógica, es probable que las modificaciones incluyan errores.
+El software no se desgasta con su utilización pero sí se deteriora a medida que se realizan cambios en su lógica, es probable que las actualizaciones o modificaciones incluyan errores.
 
 Cuando un componente de hardware se desgasta, se reemplaza por una pieza de repuesto. 
 Cuando el software falla, esto indica que hubo un error en el diseño o en el proceso del cual el diseño se convirtió en código. 
