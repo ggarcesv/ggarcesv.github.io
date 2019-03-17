@@ -1,7 +1,6 @@
 ---
 title: Guía Apache
 categories: [SERVIDORES]
-image: 
 ---
 
 Apache httpd 2.4.38 en Debian 9
