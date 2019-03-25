@@ -1,0 +1,1 @@
+/* Calcula la sumatoria números flotantes ingresados en la línea de comandos. */
