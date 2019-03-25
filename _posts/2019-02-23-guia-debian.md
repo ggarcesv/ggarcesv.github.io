@@ -39,12 +39,24 @@ Guía Práctica de administración de servidores con Debian OS 9.8
 
 # Release
 
-{% include 2019-02-23-Guia-Debian-OS/01-Release.md %}
+Actualizado 03 Mar 2019 · Rev 2
 
+* 2019-02-16 [Debian 9.8.0](https://www.debian.org/News/2019/20190216)
+* 2019-01-23 [Debian 9.7.0](https://www.debian.org/News/2019/20190123)
 
 # Instalación
 
-{% include 2019-02-23-Guia-Debian-OS/02-Install.md %}
+Primero descargamos la ISO del sistema operativo
+
+https://www.debian.org/distrib/netinst
+
+Luego definimos el método de instalación, puede ser instalado en una maquina virtual o en un equipo de servidor.
+
+Para instalar en una maquina virtual debemos montar la imagen en la configuración de virtualbox.
+Siempre verifica el tipo de red que utilizará la maquina virtual (Se recomienda Bride)
+
+Para instalar en un equipo de servidor debemos cargar la ISO en un pendrive para crear un usb booteable, esto se realiza con el programa rufus.
+
 
 # Conociendo los directorios
 
