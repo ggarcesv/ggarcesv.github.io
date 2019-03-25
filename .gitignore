@@ -12,9 +12,11 @@ CNAME
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
+*.exe
 Desktop.ini
 .DS_Store
 $RECYCLE.BIN/
 *.lnk
 .idea/*
 .vscode/settings.json
+_privado/*

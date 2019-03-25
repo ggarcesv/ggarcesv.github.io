@@ -8,34 +8,55 @@ categories: [SOFTWARE-ENGINEERING]
 
 El software es:
 
-(1) Instrucciones (programas de computadora) que cuando se ejecutan proporcionan características, funciones y rendimiento deseados.
+(1) Instrucciones de computadora que cuando se ejecutan proporcionan características, funciones y rendimiento deseados.
 
 (2) Estructuras de datos que permiten a los programas manipular adecuadamente la información.
 
 (3) Información descriptiva en forma impresa y virtual que describe la operación y el uso de los programas.
 
 
-El software es un elemento lógico, el hardware un elemento físico. 
+El software es un elemento lógico en cambio el hardware es un elemento físico. 
 El hardware se desgasta con su utilización y se deteriora según el ambiente al que se encuentre expuesto.
 El software no se desgasta con su utilización pero sí se deteriora a medida que se realizan cambios en su lógica, es probable que las actualizaciones o modificaciones incluyan errores.
 
-Cuando un componente de hardware se desgasta, se reemplaza por una pieza de repuesto. 
+Cuando un componente de hardware se desgasta, se reemplaza por otra pieza de repuesto. 
 Cuando el software falla, esto indica que hubo un error en el diseño o en el proceso del cual el diseño se convirtió en código. 
 
 Por lo tanto, las tareas de mantenimiento del software que se adaptan a las solicitudes de cambio implican una complejidad considerablemente mayor que el mantenimiento del hardware.
 
 ## Dominios de aplicaciones de software
 
-- System software
-- Application software
-- Engineering/scientific software
-- Embedded software
-- Product-line software
-- Web/Mobile applications
-- Artificial intelligence software
+- Software de sistemas: 
+Determinista como compiladores, editores, utilidades para administración archivos, 
+No determinista como componentes del sistema operativo, drivers, software para redes y procesadores de telecomunicaciones.
+
+
+>El software es determinista si es posible predecir el orden y momento de las entradas, el procesamiento y las salidas. El software es no determinista si no pueden predecirse el orden y momento en que ocurren éstos.
+
+
+- Software de aplicación:
+- Software de ingeniería y ciencias:
+- Software incrustado:
+- Software de línea de productos:
+- Aplicaciones Web/Móbil:
+- Software de inteligencia artificial:
 
 
 # 02 Ingeniería de Software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # EL PROCESO DEL SOFTWARE
 ## 01 Software Process Structure
