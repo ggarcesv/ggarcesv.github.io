@@ -1,8 +1,6 @@
-/*  Escribe una función que calcule el valor de una potencia, donde la base y el exponente son números
-enteros ingresados en la línea de comandos. */
+// Escribe una función que calcule el valor de una potencia, donde la base y el exponente 
+// son números enteros ingresados en la línea de comandos.
 
-
-//Main
 using System;
 
 public class ejer8{
@@ -13,7 +11,6 @@ public class ejer8{
 		Console.WriteLine(p);
 	}
 
-	//Función
 	static int Potencia(int la_base, int exponente){
 
 		int resul = la_base;
@@ -24,25 +21,3 @@ public class ejer8{
 		return(resul);
 	}
 }
-
-
-/*Codigo del docente echo con función incompleto.
-//Main 
-public class ejer8{
-	static void Main(String[] args){
-		int p = Potencia(2, 3);
-	}
-
-	//Función
-	static int Potencia(int base, int exponente){
-}*/
-
-
-
-
-
-
-
-
-
-

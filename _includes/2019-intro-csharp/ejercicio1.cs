@@ -1,5 +1,6 @@
-/* Dada una lista de número enteros ingresada en la línea de comandos, se pide que calcules y muestres su promedio. 
-El programa debe validar que la cantidad de parámetros sea la adecuada (mínimo dos números). */
+// Dada una lista de número enteros ingresada en la línea de comandos, 
+// se pide que calcules y muestres su promedio. 
+// El programa debe validar que la cantidad de parámetros sea la adecuada (mínimo dos números). 
 
 // Versión docente
 using System;

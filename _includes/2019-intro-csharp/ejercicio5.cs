@@ -1,5 +1,4 @@
-/* Calcula la sumatoria números flotantes ingresados en la línea de comandos. */
-
+// Calcula la sumatoria números flotantes ingresados en la línea de comandos. 
 // Ejercicio Hans
 
 using System;
