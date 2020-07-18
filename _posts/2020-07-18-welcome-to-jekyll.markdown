@@ -6,3 +6,4 @@ categories:
 ---
 
 - [x] 2020-07-18 - Eliminar sección de contacto 
+- [x] 2020-07-18 - Agregar email y telefono a perfil
