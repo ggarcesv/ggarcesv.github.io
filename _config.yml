@@ -49,7 +49,7 @@ author:
   name             : "Giuliano Garcés"
   avatar           : "https://avatars0.githubusercontent.com/u/14808145"
   bio              : "Padre de Ángel Benjamín 👨‍👦
-Investigador 🕵️ Bitcoiner 🔗 
+Investigador 🕵️ Bitcoiner 🔗  ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎
 Full-Stack Developer 👨‍💻 
 
 
@@ -127,11 +127,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
+      author_profile: false
+      read_time: false
+      comments: false
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: ""
