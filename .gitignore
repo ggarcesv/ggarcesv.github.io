@@ -19,3 +19,4 @@ $RECYCLE.BIN/
 *.lnk
 .idea/*
 .vscode/settings.json
+.jekyll-cache
