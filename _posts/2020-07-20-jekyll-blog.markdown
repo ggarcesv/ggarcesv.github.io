@@ -1,5 +1,4 @@
 ---
-# layout: post
 layout: archive
 title: "Jekyll Roadmap!"
 excerpt: ""
@@ -7,8 +6,15 @@ date: 2020-07-20 04:49:54 -0400
 categories: 
 ---
 
-# Changelog
+## Tasklist
 
+- Crear permalink guides
+- Leer archivos desde _guides
+
+
+## Changelog
+
+- ~~2020-07-21 - Delete - Footer~~
 - ~~2020-07-20 - Fix - Ajustar Email y telefono en /includes/author-profile.html~~
 - ~~2020-07-19 - Delete - Sección de contacto con iconos~~
 - ~~2020-07-18 - Add - Email y telefono a perfil~~

@@ -60,6 +60,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _guides
   - files
 exclude:
   - .asset-cache
@@ -133,14 +134,14 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comments: true
   # _guides
@@ -149,7 +150,7 @@ defaults:
       type: guides
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comments: true
   # _portfolio
@@ -158,7 +159,7 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comment: true
   # _talks
@@ -167,7 +168,7 @@ defaults:
       type: talks
     values:
       layout: talk
-      author_profile: true
+      author_profile: false
       share: true
 
 # Sass/SCSS
