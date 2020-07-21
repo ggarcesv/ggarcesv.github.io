@@ -3,7 +3,6 @@ _site/
 .jekyll-metadata
 .jekyll
 .bundle
-.sass-cache
 Gemfile
 Gemfile.lock
 node_modules
@@ -20,3 +19,4 @@ $RECYCLE.BIN/
 .idea/*
 .vscode/settings.json
 .jekyll-cache
+_drafts
