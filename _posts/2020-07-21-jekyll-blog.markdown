@@ -2,19 +2,20 @@
 layout: archive
 title: "Jekyll Roadmap!"
 excerpt: ""
-date: 2020-07-20 04:49:54 -0400
+date: 2020-07-21 12:00:00 -0400
 categories: 
 author_profile: true
 ---
 
 ## Tasklist
 
-- Crear permalink guides
-- Leer archivos desde _guides
+- Crear enlace de whassaph 
 
 
 ## Changelog
 
+- ~~2020-07-21 - Crear permalink guides
+- ~~2020-07-21 - Leer archivos desde _guides
 - ~~2020-07-21 - Delete - Footer~~
 - ~~2020-07-20 - Fix - Ajustar Email y telefono en /includes/author-profile.html~~
 - ~~2020-07-19 - Delete - Sección de contacto con iconos~~
