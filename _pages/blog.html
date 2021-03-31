@@ -9,23 +9,23 @@ author_profile: true
   {% for post in site.posts %}
     
       <li><span>
-        {{  post.date | date: '%d' }} 
+        {{  post.date | date: '%Y' }} 
             {% assign m = post.date | date: '%-m' %}
             {% case m %} 
-              {% when '1' %}Ene
-              {% when '2' %}Feb
-              {% when '3' %}Mar
-              {% when '4' %}Abr
-              {% when '5' %}May
-              {% when '6' %}Jun
-              {% when '7' %}Jul
-              {% when '8' %}Ago
-              {% when '9' %}Sep
-              {% when '10' %}Oct
-              {% when '11' %}Nov
-              {% when '12' %}Dic
+              {% when '1' %}01
+              {% when '2' %}02
+              {% when '3' %}03
+              {% when '4' %}04
+              {% when '5' %}05
+              {% when '6' %}06
+              {% when '7' %}07
+              {% when '8' %}08
+              {% when '9' %}09
+              {% when '10' %}10
+              {% when '11' %}11
+              {% when '12' %}12
             {% endcase %} 
-            {{  post.date | date: '%Y' }}
+            {{  post.date | date: '%d' }}
         </span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li> 
     
   {% endfor %}
