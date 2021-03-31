@@ -12,3 +12,13 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
+
+
+
+
+{% for post in site.posts %}
+  {% if post.categories contains "portfolio" %}
+   <li>{{ post.title }}</li> 
+  {% endif %}
+{% endfor %}
+
