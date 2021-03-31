@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: "Taller de Aprendizaje Basado en Problemas con Pseudocódigo"
+title: "Cultura y Sociedad"
 excerpt: ""
-date: 2015-06-30 04:49:54 -0400
+date: 2015-12-11 04:49:54 -0400
 categories: 
 author_profile: true
 ---
