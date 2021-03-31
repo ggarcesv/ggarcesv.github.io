@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: "Análisis de Sistemas I"
+title: "Diseño Orientado al Objeto"
 excerpt: ""
-date: 2015-06-30 04:49:54 -0400
+date: 2016-07-08 04:49:54 -0400
 categories: 
 author_profile: true
 ---

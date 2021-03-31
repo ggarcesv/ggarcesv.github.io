@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: "Taller de Comunicación y Aprendizaje"
+title: "Administración Informática"
 excerpt: ""
-date: 2015-06-30 04:49:54 -0400
+date: 2015-07-03 04:49:54 -0400
 categories: 
 author_profile: true
 ---
