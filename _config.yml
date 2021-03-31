@@ -1,6 +1,6 @@
 # Site Settings
 locale                   : "es-ES"
-title                    : " Contacto "
+title                    : " Principal "
 title_separator          : "-"
 name                     : &name "Giuliano Garcés"
 description              : &description "Ingeniero en Computación e Informática, Investigador y Analista de Datos."

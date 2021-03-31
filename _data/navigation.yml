@@ -1,15 +1,16 @@
 main:
-  - title: "Blog"
-    url: /blog/
 
-  - title: "Guías"
-    url: /guides/
+  - title: "Resume"
+    url: /resume/    
 
-  - title: "Review"
-    url: /review/    
+  - title: "Educación"
+    url: /edu/
 
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Currículum"
-    url: /skills/
+  - title: "Proyectos"
+    url: /projects/
+
+  - title: "Experiencia Laboral"
+    url: /jobs/
+
+  - title: "Timeline"
+    url: /tl/
