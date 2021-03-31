@@ -11,7 +11,7 @@ author_profile: true
       <li><span>
         {{  post.date | date:'%Y' }}
             {% assign m = post.date | date: '%m' %}
-            {% case m %}
+            <!-- {% case m %}
               {% when '1' %}-01-
               {% when '2' %}-02-
               {% when '3' %}-03-
@@ -24,7 +24,7 @@ author_profile: true
               {% when '10' %}-10-
               {% when '11' %}-11-
               {% when '12' %}-12-
-            {% endcase %}
+            {% endcase %} -->
         {{  post.date | date:'%d'}}
         </span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li> 
     
