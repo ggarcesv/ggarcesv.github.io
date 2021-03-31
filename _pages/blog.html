@@ -10,9 +10,9 @@ author_profile: true
     
       <li><span>
         {{  post.date | date:'%Y' }}
-            {% assign m = post.date | date: '%-m' %}
+            {% assign m = post.date | date: '%m' %}
             {% case m %}
-              {% when '1' %}-01--
+              {% when '1' %}-01-
               {% when '2' %}-02-
               {% when '3' %}-03-
               {% when '4' %}-04-
