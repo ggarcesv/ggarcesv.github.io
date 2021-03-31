@@ -3,7 +3,7 @@ locale                   : "es-ES"
 title                    : " Contacto "
 title_separator          : "-"
 name                     : &name "Giuliano Garcés"
-description              : &description "Ingeniero en computación e informática, investigador y analista de datos."
+description              : &description "Ingeniero en Computación e Informática, Investigador y Analista de Datos."
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 url                      : https://ggarcesv.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 github_username          : ggarcesv
@@ -48,13 +48,13 @@ atom_feed:
 author:
   name             : "Giuliano Garcés"
   avatar           : "https://avatars0.githubusercontent.com/u/14808145"
-  bio              : "🕵️ Investigador  🔗 Bitcoiner"
+  bio              : #"🕵️ Investigador  🔗 Bitcoiner"
   github           : ggarcesv
   linkedin         : ggarcesv
   email            : "📧 garces1989@gmail.com"
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   phone            : "📱 +56 987 118 414"         
-  work             : "👨‍💻 Full-Stack Developer"         
+  work             : "👨‍💻 Java Developer"         
 
 # Reading Files
 include:
