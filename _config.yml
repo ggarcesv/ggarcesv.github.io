@@ -48,13 +48,14 @@ atom_feed:
 author:
   name             : "Giuliano Garcés"
   avatar           : "https://avatars0.githubusercontent.com/u/14808145"
-  bio              : ""
   github           : ggarcesv
   linkedin         : ggarcesv
   email            : "📧 garces1989@gmail.com"
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   phone            : "📱 +56 987 118 414"         
-  work             : "👨‍💻 Java Developer"         
+  work             : "👨‍💻 Java / PHP - Software Developer"   
+  bio              : ""
+      
 
 # Reading Files
 include:
