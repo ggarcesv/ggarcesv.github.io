@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Taller de Hardware Avanzado"
+title: "IPVG - Taller de Hardware Avanzado"
 excerpt: ""
 date: 2015-12-11 04:49:54 -0400
 categories: 

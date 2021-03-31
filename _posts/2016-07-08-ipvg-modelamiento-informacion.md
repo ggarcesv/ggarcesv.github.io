@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Modelamiento de la Información"
+title: "IPVG - Modelamiento de la Información"
 excerpt: ""
 date: 2016-07-08 04:49:54 -0400
 categories: 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Estructura de Datos en C"
+title: "IPVG - Estructura de Datos en C"
 excerpt: ""
 date: 2020-01-31 04:49:54 -0400
 categories: 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Estadística y Probabilidades"
+title: "IPVG - Estadística y Probabilidades"
 excerpt: ""
 date: 2017-12-08 04:49:54 -0400
 categories: 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Programacion Web con C# y MVC.Net"
+title: "IPVG - Programacion Web con C# y MVC.Net"
 excerpt: ""
 date: 2019-07-05 04:49:54 -0400
 categories: 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Construcción de Software"
+title: "IPVG - Construcción de Software con VB.NET"
 excerpt: ""
 date: 2017-12-08 04:49:54 -0400
 categories: 

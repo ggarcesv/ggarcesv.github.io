@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Diseño Orientado al Objeto"
+title: "IPVG - Diseño Orientado al Objeto"
 excerpt: ""
 date: 2016-07-08 04:49:54 -0400
 categories: 

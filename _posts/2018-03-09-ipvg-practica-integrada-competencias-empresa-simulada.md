@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Práctica Integrada de Competencias Empresa Simulada"
+title: "IPVG - Práctica Integrada de Competencias Empresa Simulada"
 excerpt: ""
 date: 2018-03-09 04:49:54 -0400
 categories: 

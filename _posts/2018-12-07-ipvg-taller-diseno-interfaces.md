@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Taller de Diseño de Interfaces de Usuario"
+title: "IPVG - Taller de Diseño de Interfaces de Usuario"
 excerpt: ""
 date: 2018-12-07 04:49:54 -0400
 categories: 
