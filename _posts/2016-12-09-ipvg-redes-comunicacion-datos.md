@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Redes y Comunicación de Datos I"
+title: "IPVG - Asignatura: Redes y Comunicación de Datos I"
 excerpt: ""
 date: 2016-12-09 04:49:54 -0400
 categories: 

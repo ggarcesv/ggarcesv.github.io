@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Diseño de Sistemas"
+title: "IPVG - Asignatura: Diseño de Sistemas"
 excerpt: ""
 date: 2016-07-08 04:49:54 -0400
 categories: 

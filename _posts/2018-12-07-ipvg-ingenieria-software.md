@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Ingeniería de Software"
+title: "IPVG - Asignatura: Ingeniería de Software"
 excerpt: ""
 date: 2018-12-07 04:49:54 -0400
 categories: 

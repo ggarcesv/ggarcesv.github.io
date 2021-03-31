@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Inglés III"
+title: "IPVG - Asignatura: Inglés III"
 excerpt: ""
 date: 2016-12-09 04:49:54 -0400
 categories: 

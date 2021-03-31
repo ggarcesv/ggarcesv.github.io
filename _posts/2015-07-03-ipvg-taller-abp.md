@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Taller de Aprendizaje Basado en Problemas con Pseudocódigo"
+title: "IPVG - Asignatura: Taller de Aprendizaje Basado en Problemas con Pseudocódigo"
 excerpt: ""
 date: 2015-07-03 04:49:54 -0400
 categories: 

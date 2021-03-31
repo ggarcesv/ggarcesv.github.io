@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Programación Orientada al Objeto en Java"
+title: "IPVG - Asignatura: Programación Orientada al Objeto en Java"
 excerpt: ""
 date: 2017-12-08 04:49:54 -0400
 categories: 

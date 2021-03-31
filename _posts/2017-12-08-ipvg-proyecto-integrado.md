@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Proyecto Integrado"
+title: "IPVG - Asignatura: Proyecto Integrado"
 excerpt: ""
 date: 2017-12-08 04:49:54 -0400
 categories: 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Cultura y Sociedad"
+title: "IPVG - Asignatura: Cultura y Sociedad"
 excerpt: ""
 date: 2015-12-11 04:49:54 -0400
 categories: 

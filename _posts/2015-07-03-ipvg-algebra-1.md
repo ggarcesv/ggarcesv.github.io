@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Algebra I"
+title: "IPVG - Asignatura: Algebra I"
 excerpt: ""
 date: 2015-07-03 04:49:54 -0400
 categories: 

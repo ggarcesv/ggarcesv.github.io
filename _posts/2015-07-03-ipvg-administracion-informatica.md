@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Administración Informática"
+title: "IPVG - Asignatura: Administración Informática"
 excerpt: ""
 date: 2015-07-03 04:49:54 -0400
 categories: 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Arquitectura de Computadores"
+title: "IPVG - Asignatura: Arquitectura de Computadores"
 excerpt: ""
 date: 2016-12-09 04:49:54 -0400
 categories: 

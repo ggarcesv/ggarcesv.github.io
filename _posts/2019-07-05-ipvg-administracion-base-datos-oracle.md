@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Administración de Base de datos Oracle"
+title: "IPVG - Asignatura: Administración de Base de datos Oracle"
 excerpt: ""
 date: 2019-07-05 04:49:54 -0400
 categories: 

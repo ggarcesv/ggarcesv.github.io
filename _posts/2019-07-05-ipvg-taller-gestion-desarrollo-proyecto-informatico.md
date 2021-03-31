@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "IPVG - Taller de Gestión y Desarrollo de Proyecto Informático"
+title: "IPVG - Asignatura: Taller de Gestión y Desarrollo de Proyecto Informático"
 excerpt: ""
 date: 2019-07-05 04:49:54 -0400
 categories: 
