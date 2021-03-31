@@ -129,6 +129,21 @@ defaults:
       comments: false
       share: true
       related: false
+
+  # Timeline
+  - scope:
+      path: ""
+      type: timeline
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: true
+      related: false
+
+
+
   # _pages
   - scope:
       path: ""
